@@ -10,4 +10,9 @@ let message = 'Hello,'+ userName;
 // alert(message);
 console.log(message);                   
 }
-showMessage();
+// showMessage();
+// function forMessage(from,name){
+// from = '*'+ name + '*';
+// console.log(from + ":" + name);
+// }
+// forMessage(from,Ruhul);
