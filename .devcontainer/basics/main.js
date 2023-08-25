@@ -10,9 +10,9 @@ let message = 'Hello,'+ userName;
 // alert(message);
 console.log(message);                   
 }
-// showMessage();
-// function forMessage(from,name){
-// from = '*'+ name + '*';
-// console.log(from + ":" + name);
-// }
-// forMessage(from,Ruhul);
+
+function randomNumber(){
+let myNumber = Math.random();
+return myNumber;
+}
+randomNumber();
