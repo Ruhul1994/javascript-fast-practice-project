@@ -26,3 +26,7 @@ Galaxy-A01 	192.168.31.204
 26:23:63:08:02:5F 	3min54s 	
 Ruhul 	192.168.31.144
 48:A4:72:69:33:59*/
+
+function griting(){
+    console.log('good morning');
+}
