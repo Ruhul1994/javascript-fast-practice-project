@@ -30,3 +30,7 @@ Ruhul 	192.168.31.144
 function griting(){
     console.log('good morning');
 }
+var griting = function(){
+    console.log('welcome!');
+}
+console.log (griting);
