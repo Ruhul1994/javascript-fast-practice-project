@@ -14,3 +14,10 @@ const add = (a,b) => a * b;
 let myresult = add(4,5);
 console.log(myresult);
 //node .devcontainer/basics/function.js
+let a = Symbol(122);
+let b =122;
+if(a==b){
+    console.log(true);
+}else{
+    console.log(false);
+}
