@@ -17,3 +17,9 @@ const object2 = {
 }
 object3 = {...object2, ...object1 };
 console.log(object3);
+const teacher = {
+    "name":"Tomas",
+    "subject":"Math",
+    "class":"ten",
+    "school":"secendary"
+}
