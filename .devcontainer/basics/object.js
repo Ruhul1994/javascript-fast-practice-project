@@ -33,3 +33,14 @@ const carecter ={
 }
 const allBio = { ...parson, ...carecter };
 console.log(allBio);
+
+
+const myObject = {
+    Name:"Ruhul",
+    Age:31
+}
+const myNewObjedct = {
+    ...myObject,
+    Age:32
+}
+console.log(myNewObjedct);
