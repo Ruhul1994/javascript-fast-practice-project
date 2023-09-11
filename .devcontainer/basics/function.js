@@ -21,11 +21,17 @@
 // }else{
 //     console.log(false);
 // }
-function myName(name = 'Ruhul'){
-   if (!name) {
-       console.log('please inter the name');
-       return
-    }
-    return `${name} is a good programar in the world.`
+// function myName(name = 'Ruhul'){
+//    if (!name) {
+//        console.log('please inter the name');
+//        return
+//     }
+//     return `${name} is a good programar in the world.`
+// }
+// console.log(myName());
+
+function randomNumber(min = 1, max){
+    const ranNumber = Math.round(Math.random()* min + (max - min));
+    return ranNumber;
 }
-console.log(myName());
+console.log( randomNumber(3,33) );
