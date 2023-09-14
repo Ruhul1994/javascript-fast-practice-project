@@ -20,12 +20,27 @@
 
 // console.log(Array.of(score1,score2,score3));
 
-const myArray = [2,3,4,5,6,7,8,9];
-let sum = 0;
-myArray.forEach((v,i)=>{
-if(i <= 3){
- sum += v;
-}
+// const myArray = [2,3,4,5,6,7,8,9];
+// let sum = 0;
+// myArray.forEach((v,i)=>{
+// if(i <= 3){
+//  sum += v;
+// }
 
-})
-console.log(sum);
+// })
+// console.log(sum);
+const students = ['Atik','Brosha','Taniya','Akash',['Rubel','Toma'],['Rahul',['Mina,Razu'],'Nandini'],['Mni','jara']];
+
+function studentCount () {
+    for(let i = 0; i< students.length; i++) {
+        let studentIndex = students[i];
+        console.log(studentIndex);
+        for (let j =0; j<studentIndex.length; j++){
+            let studentIndexNested = studentIndex[j];
+            console.log(studentIndexNested);
+        }
+    }
+    
+   
+}
+console.log(studentCount());
