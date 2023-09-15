@@ -35,7 +35,7 @@ function studentCount () {
     for(let i = 0; i< students.length; i++) {
         let studentIndex = students[i];
         console.log(studentIndex);
-        for (let j =0; j<studentIndex.length; j++){
+        for (let j =i; j<students.length; j++){
             let studentIndexNested = studentIndex[j];
             console.log(studentIndexNested);
         }
