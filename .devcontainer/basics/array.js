@@ -31,16 +31,38 @@
 // console.log(sum);
 const students = ['Atik','Brosha','Taniya','Akash',['Rubel','Toma'],['Rahul',['Mina,Razu'],'Nandini'],['Mni','jara']];
 
-function studentCount () {
-    for(let i = 0; i< students.length; i++) {
-        let studentIndex = students[i];
-        console.log(studentIndex);
-        for (let j =i; j<students.length; j++){
-            let studentIndexNested = studentIndex[j];
-            console.log(studentIndexNested);
-        }
-    }
+// function studentCount () {
+//     for(let i = 0; i< students.length; i++) {
+//         let studentIndex = students[i];
+//         console.log(studentIndex);
+//         for (let j =i; j<students.length; j++){
+//             let studentIndexNested = studentIndex[j];
+//             console.log(studentIndexNested);
+//         }
+//     }
     
    
-}
-console.log(studentCount());
+// }
+// console.log(studentCount());
+
+
+const myScroe = [1,3,4,5,6,7];
+const  points = new Array(12,3,4,6,7,8,8);
+const score1 = new Array (5);
+console.log(points);
+console.log(score1);
+const score2 = [6];
+console.log(score2);
+let fruits = ['mango','banana','Apple','pinapple','gova'];
+// let type = typeof(fruits);
+// let check = Array.isArray(fruits);
+// console.log(check);
+
+// let score3 = fruits instanceof Array;
+// let size = fruits.length;
+// console.log(score3);
+// console.log(size);
+let getString = fruits.toString();
+console.log(getString);
+
+
