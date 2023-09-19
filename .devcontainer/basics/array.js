@@ -29,7 +29,7 @@
 
 // })
 // console.log(sum);
-const students = ['Atik','Brosha','Taniya','Akash',['Rubel','Toma'],['Rahul',['Mina,Razu'],'Nandini'],['Mni','jara']];
+// const students = ['Atik','Brosha','Taniya','Akash',['Rubel','Toma'],['Rahul',['Mina,Razu'],'Nandini'],['Mni','jara']];
 
 // function studentCount () {
 //     for(let i = 0; i< students.length; i++) {
@@ -46,14 +46,14 @@ const students = ['Atik','Brosha','Taniya','Akash',['Rubel','Toma'],['Rahul',['M
 // console.log(studentCount());
 
 
-const myScroe = [1,3,4,5,6,7];
-const  points = new Array(12,3,4,6,7,8,8);
-const score1 = new Array (5);
-console.log(points);
-console.log(score1);
-const score2 = [6];
-console.log(score2);
-let fruits = ['mango','banana','Apple','pinapple','gova'];
+// const myScroe = [1,3,4,5,6,7];
+// const  points = new Array(12,3,4,6,7,8,8);
+// const score1 = new Array (5);
+// console.log(points);
+// console.log(score1);
+// const score2 = [6];
+// console.log(score2);
+// let fruits = ['mango','banana','Apple','pinapple','gova'];
 // let type = typeof(fruits);
 // let check = Array.isArray(fruits);
 // console.log(check);
@@ -62,7 +62,20 @@ let fruits = ['mango','banana','Apple','pinapple','gova'];
 // let size = fruits.length;
 // console.log(score3);
 // console.log(size);
-let getString = fruits.toString();
-console.log(getString);
+// let getString = fruits.toString();
+// console.log(getString);
+
+const cars = [];
+cars[0] = 'BMW';
+cars[1] = 'Volvo';
+cars[2] = 'Marcidis'
+
+let car = cars[1];
+
+
+console.log(cars)
+console.log(car)
+cars[0] = 'porsha';
+
 
 
