@@ -65,17 +65,10 @@
 // let getString = fruits.toString();
 // console.log(getString);
 
-const cars = [];
-cars[0] = 'BMW';
-cars[1] = 'Volvo';
-cars[2] = 'Marcidis'
-
-let car = cars[1];
-
-
-console.log(cars)
-console.log(car)
-cars[0] = 'porsha';
-
-
-
+// 
+// const myArray = [[1,2],[3,4],[5,6],[7,8]];
+// const myNewArray = myArray.flat();
+// console.log(myNewArray);
+const students = ['Rohim','korim','Rupaly','Taniya','Aksar'];
+students.splice(2,2,'Ruhul','Nahid');
+console.log(students);
