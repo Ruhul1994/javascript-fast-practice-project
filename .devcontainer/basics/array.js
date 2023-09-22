@@ -69,6 +69,8 @@
 // const myArray = [[1,2],[3,4],[5,6],[7,8]];
 // const myNewArray = myArray.flat();
 // console.log(myNewArray);
-const students = ['Rohim','korim','Rupaly','Taniya','Aksar'];
-students.splice(2,2,'Ruhul','Nahid');
-console.log(students);
+// 
+
+const points = [4,5,2,7,9,1,8,16,65,13,3,6,10,12,11,15];
+const rightpoint = points.sort((a,b)=> b-a);
+console.log(rightpoint);
