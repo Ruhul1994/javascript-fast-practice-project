@@ -70,7 +70,23 @@
 // const myNewArray = myArray.flat();
 // console.log(myNewArray);
 // 
+//you have a array can you fiend a max number in array imperative approach.
 
-const points = [4,5,2,7,9,1,8,16,65,13,3,6,10,12,11,15];
-const rightpoint = points.sort((a,b)=> b-a);
-console.log(rightpoint);
+const points = [4,5,2,7,9,1,8,16,65,13,3,6,10,12,11,15,122];
+// const rightpoint = points.sort((a,b)=> b-a);
+// console.log(rightpoint);
+
+function findMax(array){
+    if(array.length === 0){
+        return undefined; // for empty array.
+    }
+    let max =0;
+    for (i=1; i<array.length; i++){
+        if(array[i] > max){
+          max = array[i]; // updet the max if found the largest number in array.     
+        }
+    }
+    return max;
+}
+
+console.log(findMax(points));
