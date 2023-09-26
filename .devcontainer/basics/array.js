@@ -76,17 +76,21 @@ const points = [4,5,2,7,9,1,8,16,65,13,3,6,10,12,11,15,122];
 // const rightpoint = points.sort((a,b)=> b-a);
 // console.log(rightpoint);
 
-function findMax(array){
-    if(array.length === 0){
-        return undefined; // for empty array.
-    }
-    let max =0;
-    for (i=1; i<array.length; i++){
-        if(array[i] > max){
-          max = array[i]; // updet the max if found the largest number in array.     
-        }
-    }
-    return max;
-}
+// function findMax(array){
+//     if(array.length === 0){
+//         return undefined; // for empty array.
+//     }
+//     let max =0;
+//     for (i=1; i<array.length; i++){
+//         if(array[i] > max){
+//           max = array[i]; // updet the max if found the largest number in array.     
+//         }
+//     }
+//     return max;
+// }
 
-console.log(findMax(points));
+// console.log(findMax(points));
+
+const Numbers = [12,65,100,25,42,74,87,13,60,10];
+// console.log(Numbers.sort()); // wrong approch.
+console.log(Numbers.sort((a,b)=> b - a));
