@@ -30,8 +30,13 @@
 // }
 // console.log(myName());
 
-function randomNumber(min = 1, max){
-    const ranNumber = Math.round(Math.random()* min + (max - min));
-    return ranNumber;
+// function randomNumber(min = 1, max){
+//     const ranNumber = Math.round(Math.random()* min + (max - min));
+//     return ranNumber;
+// }
+// console.log( randomNumber(3,33) );
+
+function getnumber(...Num){
+   return Num
 }
-console.log( randomNumber(3,33) );
+console.log(getnumber(200,300));
