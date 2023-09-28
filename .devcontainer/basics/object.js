@@ -26,10 +26,10 @@
 // 
 function makeUser(name,age){
     return {
-        name:name,
-        age:age,
+        name,
+        age,
     }
 }
-    let user = makeUser('Ruhul',31);
+    let user = {name:'Ruhul', age:31};
     console.log(user.name);
     console.log(user.age);
