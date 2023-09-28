@@ -23,24 +23,13 @@
 //     "class":"ten",
 //     "school":"secendary"
 // }
-const parson = {
-    Name:"Ruhul",
-    Age:23
+// 
+function makeUser(name,age){
+    return {
+        name:name,
+        age:age,
+    }
 }
-const carecter ={
-    hoby: "web design",
-    city:"khulna"
-}
-const allBio = { ...parson, ...carecter };
-console.log(allBio);
-
-
-const myObject = {
-    Name:"Ruhul",
-    Age:31
-}
-const myNewObjedct = {
-    ...myObject,
-    Age:32
-}
-console.log(myNewObjedct);
+    let user = makeUser('Ruhul',31);
+    console.log(user.name);
+    console.log(user.age);
