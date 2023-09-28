@@ -93,4 +93,12 @@ const points = [4,5,2,7,9,1,8,16,65,13,3,6,10,12,11,15,122];
 
 const Numbers = [12,65,100,25,42,74,87,13,60,10];
 // console.log(Numbers.sort()); // wrong approch.
-console.log(Numbers.sort((a,b)=> b - a));
+// console.log(Numbers.sort((a,b)=> b - a));
+const txt = 'Number: ';
+Numbers.forEach(myFunction);
+function myFunction (val){ 
+console.log( txt + val );
+}
+
+console.log (myFunction());
+console.log(Numbers.length);
