@@ -34,11 +34,16 @@
 //     console.log(user.name);
 //     console.log(user.age);
 
-const students ={
-    name:'Ruhul',
-    Age:32,
-    contry:'BAngladesh'
+// 
+
+const point = {
+    point1:200,
+    point2:200,
+    point3:300,
+    point4:400,
 }
-for(let key in students){
-    console.log(key);
+let sum = 0;
+for(let key in point){
+     sum += point[key];
 }
+console.log(sum);
