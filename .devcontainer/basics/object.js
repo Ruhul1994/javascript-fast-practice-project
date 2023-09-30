@@ -41,9 +41,20 @@ const point = {
     point2:200,
     point3:300,
     point4:400,
+    point5: 'Golden'
 }
-let sum = 0;
-for(let key in point){
-     sum += point[key];
+// let sum = 0;
+// for(let key in point){
+//      sum += point[key];
+// }
+// console.log(sum);
+
+function maltiplyNumber(point){
+    for(let key in point){
+        if(typeof point[key] == 'number'){
+            point[key] *= 2;
+        }
+    }
+    return point;
 }
-console.log(sum);
+console.log(maltiplyNumber(point));
