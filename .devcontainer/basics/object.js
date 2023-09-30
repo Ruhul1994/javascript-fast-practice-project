@@ -24,12 +24,21 @@
 //     "school":"secendary"
 // }
 // 
-function makeUser(name,age){
-    return {
-        name,
-        age,
-    }
+// function makeUser(name,age){
+//     return {
+//         name,
+//         age,
+//     }
+// }
+//     let user = {name:'Ruhul', age:31};
+//     console.log(user.name);
+//     console.log(user.age);
+
+const students ={
+    name:'Ruhul',
+    Age:32,
+    contry:'BAngladesh'
 }
-    let user = {name:'Ruhul', age:31};
-    console.log(user.name);
-    console.log(user.age);
+for(let key in students){
+    console.log(key);
+}
