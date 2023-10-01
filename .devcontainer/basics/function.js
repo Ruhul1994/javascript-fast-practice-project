@@ -36,7 +36,15 @@
 // }
 // console.log( randomNumber(3,33) );
 
-function getnumber(...Num){
-   return Num
-}
-console.log(getnumber(200,300));
+// function getnumber(...Num){
+//    return Num
+// }
+// console.log(getnumber(200,300));
+//IIFE function control the global scope plution.
+(function connect (){
+   console.log('conect DB');
+})();
+
+(connect => {
+   console.log('connect Bd two');
+})()
