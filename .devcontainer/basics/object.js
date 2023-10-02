@@ -49,12 +49,13 @@ const point = {
 // }
 // console.log(sum);
 
-function maltiplyNumber(point){
-    for(let key in point){
-        if(typeof point[key] == 'number'){
-            point[key] *= 2;
-        }
-    }
-    return point;
+// 
+
+const myObject = {
+    // name:'Ruhul',
+};
+if(Object.keys(myObject).length === 0 ){
+    console.log('your object is empty');
+} else {
+    console.log('your object is not impty');
 }
-console.log(maltiplyNumber(point));
