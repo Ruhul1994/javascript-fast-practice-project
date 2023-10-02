@@ -23,9 +23,24 @@
 //     console.log(print);
 // }
 
-for (let i = 1; i <= 10; i ++){
-    console.log(`namta : ${i}`);
-    for(let j = 1; j<=10; j ++){
-        console.log( i + ' * ' + j + ' = ' + i * j );
-    }
-}
+// for (let i = 1; i <= 10; i ++){
+//     console.log(`namta : ${i}`);
+//     for(let j = 1; j<=10; j ++){
+//         console.log( i + ' * ' + j + ' = ' + i * j );
+//     }
+// }
+
+// for(let i = 0; i <= 20; i ++){
+//     if(i === 7){
+//         console.log(`7 is comming sir`);
+//         break
+//     }
+//     console.log(`your number is : ${i}`);
+// }
+// for(let i = 0; i <= 20; i ++){
+//     if(i === 7){
+//         console.log(`7 is comming sir`);
+//         continue;
+//     }
+//     console.log(`your number is : ${i}`);
+// }
