@@ -18,7 +18,14 @@
 //     }
 // }
 
-for(let i = 0; i < 12; i ++){
-    const print = i;
-    console.log(print);
+// for(let i = 0; i < 12; i ++){
+//     const print = i;
+//     console.log(print);
+// }
+
+for (let i = 1; i <= 10; i ++){
+    console.log(`namta : ${i}`);
+    for(let j = 1; j<=10; j ++){
+        console.log( i + ' * ' + j + ' = ' + i * j );
+    }
 }
