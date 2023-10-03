@@ -44,3 +44,10 @@
 //     }
 //     console.log(`your number is : ${i}`);
 // }
+
+let score = 3;
+do {
+    console.log(`your socore is ${score}`);
+   score ++ ;
+} while(score<=12) {
+    
