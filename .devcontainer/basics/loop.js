@@ -45,9 +45,38 @@
 //     console.log(`your number is : ${i}`);
 // }
 
-let score = 3;
-do {
-    console.log(`your socore is ${score}`);
-   score ++ ;
-} while(score<=12) {
-    
+// let score = 3;
+// do {
+//     console.log(`your socore is ${score}`);
+//    score ++ ;
+// } while(score<=12) 
+
+const priceCart =[
+    {
+        BookName : 'Amar Book',
+        price : 20
+    },
+    {
+        BookName : 'golper Book',
+        price : 30
+    },
+    {
+        BookName : 'Programing Book',
+        price : 60
+    },
+    {
+        BookName : 'cartoon Book',
+        price : 25
+    },
+    {
+        BookName : 'Amar Book',
+        price : 20
+    },
+    {
+        BookName : 'History Book',
+        price : 12
+    }
+]
+
+const total = priceCart.reduce((acc,carentval)=> acc + carentval.price,0);
+console.log(total);
