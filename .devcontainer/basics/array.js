@@ -72,7 +72,7 @@
 // 
 //you have a array can you fiend a max number in array imperative approach.
 
-const points = [4,5,2,7,9,1,8,16,65,13,3,6,10,12,11,15,122];
+//const points = [4,5,2,7,9,1,8,16,65,13,3,6,10,12,11,15,122];
 // const rightpoint = points.sort((a,b)=> b-a);
 // console.log(rightpoint);
 
@@ -91,14 +91,22 @@ const points = [4,5,2,7,9,1,8,16,65,13,3,6,10,12,11,15,122];
 
 // console.log(findMax(points));
 
-const Numbers = [12,65,100,25,42,74,87,13,60,10];
+//const Numbers = [12,65,100,25,42,74,87,13,60,10];
 // console.log(Numbers.sort()); // wrong approch.
 // console.log(Numbers.sort((a,b)=> b - a));
-const txt = 'Number: ';
-Numbers.forEach(myFunction);
-function myFunction (val){ 
-console.log( txt + val );
-}
+// const txt = 'Number: ';
+// Numbers.forEach(myFunction);
+// function myFunction (val){ 
+// console.log( txt + val );
+// }
 
-console.log (myFunction());
-console.log(Numbers.length);
+// console.log (myFunction());
+// console.log(Numbers.length);
+
+const points = [1,2,3,4,5,6,7];
+const result = points.reduce((acc,current) =>{
+  acc += current;
+    return acc;
+},0);
+
+console.log(result);
