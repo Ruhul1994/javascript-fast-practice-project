@@ -41,10 +41,10 @@
 // }
 // console.log(getnumber(200,300));
 //IIFE function control the global scope plution.
-(function connect (){
-   console.log('conect DB');
-})();
+// (function connect (){
+//    console.log('conect DB');
+// })();
 
-(connect => {
-   console.log('connect Bd two');
-})()
+// (connect => {
+//    console.log('connect Bd two');
+// })()
