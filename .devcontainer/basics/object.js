@@ -36,26 +36,52 @@
 
 // 
 
-const point = {
-    point1:200,
-    point2:200,
-    point3:300,
-    point4:400,
-    point5: 'Golden'
-}
-// let sum = 0;
-// for(let key in point){
-//      sum += point[key];
+// const point = {
+//     point1:200,
+//     point2:200,
+//     point3:300,
+//     point4:400,
+//     point5: 'Golden'
 // }
-// console.log(sum);
+// // let sum = 0;
+// // for(let key in point){
+// //      sum += point[key];
+// // }
+// // console.log(sum);
 
-// 
+// // 
 
-const myObject = {
-    // name:'Ruhul',
-};
-if(Object.keys(myObject).length === 0 ){
-    console.log('your object is empty');
-} else {
-    console.log('your object is not impty');
+// const myObject = {
+//     // name:'Ruhul',
+// };
+// if(Object.keys(myObject).length === 0 ){
+//     console.log('your object is empty');
+// } else {
+//     console.log('your object is not impty');
+// }
+
+const students = {
+   1 : {
+    name: 'zahid',
+    mail: 'zahid@gmail.com',
+    },
+   2 : {
+    name: 'Frhan',
+    mail: 'Farhan@gmail.com',
+    },
+   3 : {
+    name: 'Farhan',
+    mail: 'Farhan@gmail.com',
+    },
+   4 : {
+    name: 'Mostafiz',
+    mail: 'Mostafiz@gmail.com',
+    },
 }
+
+Object.values(students).forEach((student)=>{
+    if (student.name == 'Mostafiz'){
+        student.name = 'sakib';
+    }
+    console.log(student.name, student.mail);
+});
