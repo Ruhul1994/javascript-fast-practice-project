@@ -106,6 +106,7 @@
 const points = [1,2,3,4,5,6,7];
 const result = points.reduce((acc,current) =>{
   acc += current;
+  console.log (acc);
     return acc;
 },0);
 
