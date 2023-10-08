@@ -60,28 +60,36 @@
 //     console.log('your object is not impty');
 // }
 
-const students = {
-   1 : {
-    name: 'zahid',
-    mail: 'zahid@gmail.com',
-    },
-   2 : {
-    name: 'Frhan',
-    mail: 'Farhan@gmail.com',
-    },
-   3 : {
-    name: 'Farhan',
-    mail: 'Farhan@gmail.com',
-    },
-   4 : {
-    name: 'Mostafiz',
-    mail: 'Mostafiz@gmail.com',
-    },
-}
+// const students = {
+//    1 : {
+//     name: 'zahid',
+//     mail: 'zahid@gmail.com',
+//     },
+//    2 : {
+//     name: 'Frhan',
+//     mail: 'Farhan@gmail.com',
+//     },
+//    3 : {
+//     name: 'Farhan',
+//     mail: 'Farhan@gmail.com',
+//     },
+//    4 : {
+//     name: 'Mostafiz',
+//     mail: 'Mostafiz@gmail.com',
+//     },
+// }
 
-Object.values(students).forEach((student)=>{
-    if (student.name == 'Mostafiz'){
-        student.name = 'sakib';
-    }
-    console.log(student.name, student.mail);
-});
+// Object.values(students).forEach((student)=>{
+//     if (student.name == 'Mostafiz'){
+//         student.name = 'sakib';
+//     }
+//     console.log(student.name, student.mail);
+// });
+
+// function doSome (num = 10){
+//     const number = 23;
+//     const result = num + number;
+//     return result;
+
+// }
+// console.log(doSome());
