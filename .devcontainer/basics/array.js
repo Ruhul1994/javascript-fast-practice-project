@@ -103,11 +103,19 @@
 // console.log (myFunction());
 // console.log(Numbers.length);
 
-const points = [1,2,3,4,5,6,7];
-const result = points.reduce((acc,current) =>{
-  acc += current;
-  console.log (acc);
-    return acc;
-},0);
+// const points = [1,2,3,4,5,6,7];
+// const result = points.reduce((acc,current) =>{
+//   acc += current;
+//   console.log (acc);
+//     return acc;
+// },0);
 
-console.log(result);
+// console.log(result);
+
+const arry =[1,2,4,5,6,7,8,9,12];
+// function squreItem(item){
+//   return item * item
+// }
+
+const newarry = arry.map(item => item + item);
+console.log(newarry);
