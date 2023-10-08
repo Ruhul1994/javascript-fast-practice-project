@@ -49,14 +49,20 @@
 //    console.log('connect Bd two');
 // })()
 
- function discribe(name, callback){
-    const myage = 31;
-    callback(myage);
-    console.log(`your name is ${name}`)
- }
+//  function discribe(name, callback){
+//     const myage = 31;
+//     callback(myage);
+//     console.log(`your name is ${name}`)
+//  }
 
- function say(age){
-    console.log(`your age is ${age} `);
- }
+//  function say(age){
+//     console.log(`your age is ${age} `);
+//  }
 
- console.log(discribe('Ruhul',say));
+//  console.log(discribe('Ruhul',say));
+
+const myFunction = function toadd (num = 10){
+   const result = num + num ;
+   return result;
+}
+ console.log(myFunction());
