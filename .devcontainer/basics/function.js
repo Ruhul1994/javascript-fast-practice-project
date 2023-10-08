@@ -48,3 +48,15 @@
 // (connect => {
 //    console.log('connect Bd two');
 // })()
+
+ function discribe(name, callback){
+    const myage = 31;
+    callback(myage);
+    console.log(`your name is ${name}`)
+ }
+
+ function say(age){
+    console.log(`your age is ${age} `);
+ }
+
+ console.log(discribe('Ruhul',say));
