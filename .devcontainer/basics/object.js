@@ -93,3 +93,17 @@
 
 // }
 // console.log(doSome());
+
+const student = {
+    name: 'Ruhul',
+    age:31,
+    work:'webdeveloper',
+    anotherObj : {
+        name:'Kuddus',
+        age:30,
+        value: function(){
+            console.log(`my name is : ${this.name}`)
+        }
+    }
+}
+console.log(student.anotherObj.value());
