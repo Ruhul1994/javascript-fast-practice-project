@@ -108,15 +108,19 @@
 // }
 // console.log(student.anotherObj.value());
 
-const korim = {
-    name : 'korim',
-    bod:1994,
-    age: function(currentYear){
-        console.log(`${this.name} age is : ${currentYear - this.bod}`)
-    }
-}
-const Ruhul = {
-    name:'kuddus',
-    bod:1993,
-}
-console.log(korim.age.call(Ruhul,2023));
+// 
+
+// const nahid ={
+//     name:'nahid',
+//     dob:2000,
+//     age: function(carentyear,msg){
+//         console.log(`${msg}, ${this.name} is ${carentyear-this.dob} years old`);
+//     }
+// }
+// const Ruhul ={
+//     name:'Kuddus',
+//     dob:1993
+// }
+
+// const Ruhulage = nahid.age.bind(Ruhul);
+// console.log(Ruhulage(2023,'He is smart'));
