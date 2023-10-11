@@ -123,4 +123,4 @@
 // }
 
 // const Ruhulage = nahid.age.bind(Ruhul);
-// console.log(Ruhulage(2023,'He is smart'));
+// console.log(Ruhulage(2023,'He is good boy'));
