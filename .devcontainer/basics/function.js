@@ -67,10 +67,31 @@
 // }
 //  console.log(myFunction());
 
-function Student (name,age,roll){
-   this.name = name;
-   this.age = age;
-   this.roll = roll
-} 
-const sumona = new Student ('sumon',21,22);
-console.log(sumona.name);
+// function Student (name,age,roll){
+//    this.name = name;
+//    this.age = age;
+//    this.roll = roll
+// } 
+// const sumona = new Student ('sumon',21,22);
+// console.log(sumona.name);
+
+function giveRent(yernMony){
+   return new Promise((resolve,reject)=>{
+      setTimeout(()=>{
+         if(yernMony){
+            resolve('pay the rent')
+         } else{
+            reject(new Error('Dont pay the rent'))
+         }
+      },2000)
+   })
+}
+
+
+giveRent(false)
+.then((e)=>{
+console.log(e);
+})
+.catch((v)=>{
+console.log(v);
+})
