@@ -61,8 +61,16 @@
 
 //  console.log(discribe('Ruhul',say));
 
-const myFunction = function toadd (num = 10){
-   const result = num + num ;
-   return result;
-}
- console.log(myFunction());
+// const myFunction = function toadd (num = 10){
+//    const result = num + num ;
+//    return result;
+// }
+//  console.log(myFunction());
+
+function Student (name,age,roll){
+   this.name = name;
+   this.age = age;
+   this.roll = roll
+} 
+const sumona = new Student ('sumon',21,22);
+console.log(sumona.name);
