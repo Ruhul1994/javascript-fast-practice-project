@@ -124,3 +124,20 @@
 
 // const Ruhulage = nahid.age.bind(Ruhul);
 // console.log(Ruhulage(2023,'He is good boy'));
+
+const myObject = {
+    Bangladesh : 'Dhaka',
+    USA : 'wosihinton dc',
+    India : 'Dillih',
+    japan : 'tokiyo'
+}
+// const capital = Object.keys(myObject);
+// console.log(capital);
+
+// const capi = capital.map(key =>{
+//     console.log(`contry name is: ${key}`)
+// })
+
+for ( country in myObject){
+    console.log(`your country is: ${country}`)
+};
