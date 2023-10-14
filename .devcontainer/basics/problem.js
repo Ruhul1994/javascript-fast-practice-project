@@ -15,7 +15,7 @@
 
 // function RemoveDuplicate(arr){
 //     const newArray = myArray.filter((value,index)=>{
-//         arr.indexOf(value) === index;
+//         return arr.indexOf(value) === index;
 //     })
 //     return newArray;
 // }
