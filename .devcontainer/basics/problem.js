@@ -22,7 +22,7 @@ console.time('analog')
 // }
 // console.log(RemoveDuplicate(myArray));
 console.time('filtermethod');
-const myArray = [1, 1,13,13, 2, 3, 4, 4, 4, 5, 5, 5, 6,1,5,1, 6, 6, 7, 7, 7, 7, 7, 8, 9,,2, 9, 9, 9, 9,12,12,12];
+const myArray =[1,1,2,3,4,4,4,5,5,5,6,6,6,7,7,7,7,7,8,9,9,9,9,9,12,12];
 
 function RemoveDuplicate(arr) {
     const newArray = arr.filter((value, index) => {
