@@ -125,12 +125,12 @@
 // const Ruhulage = nahid.age.bind(Ruhul);
 // console.log(Ruhulage(2023,'He is good boy'));
 
-const myObject = {
-    Bangladesh : 'Dhaka',
-    USA : 'wosihinton dc',
-    India : 'Dillih',
-    japan : 'tokiyo'
-}
+// const myObject = {
+//     Bangladesh : 'Dhaka',
+//     USA : 'wosihinton dc',
+//     India : 'Dillih',
+//     japan : 'tokiyo'
+// }
 // const capital = Object.keys(myObject);
 // console.log(capital);
 
@@ -138,6 +138,17 @@ const myObject = {
 //     console.log(`contry name is: ${key}`)
 // })
 
-for ( country in myObject){
-    console.log(`your country is: ${country}`)
-};
+// for ( country in myObject){
+//     console.log(`your country is: ${country}`)
+// };
+
+function User(name,id,isAdmin){
+    this.name = name,
+    this.id = id,
+    this.isAdmin = isAdmin
+}
+
+const user1 = new User('Shafin',1234,false);
+const user2 = new User('Ruhul',232323,true);
+console.log(user1);
+console.log(user2);
