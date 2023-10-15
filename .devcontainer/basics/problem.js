@@ -50,10 +50,23 @@ console.time('analog')
 //  it's the sum of the previous two numbers
 //  (e.g., 0, 1, 1, 2, 3, 5, 8, 13, ...).
 
-function fibonacci(){
-for(let i=0;i<20;i++){
-    fibo =(i-1) + (i-2)
- return fibo;
+function fibonacci(n){
+if(n === 0){
+    return 0;
+} else if (n === 1){
+    return 1;
 }
+return fibonacci(n-1) + fibonacci(n-2);
 };
-console.log(fibonacci());
+console.log(fibonacci(2));
+
+function fibonacci(n) {
+    if (n === 0) {
+        return 0; // Base case: F(0) = 0
+    } else if (n === 1) {
+        return 1; // Base case: F(1) = 1
+    }
+    // Recursive step: F(n) = F(n-1) + F(n-2)
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+console.log(fibonacci(5));
