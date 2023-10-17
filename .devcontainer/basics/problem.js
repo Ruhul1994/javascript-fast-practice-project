@@ -76,20 +76,34 @@
 //Problem 6: Count Vowels
 //Write a function that takes a string as input and counts the number of vowels in it.
 
-const inputString = 'k.m.ruhulkuddus';
-const stringArray = Array.from(inputString)
+// const inputString = 'k.m.ruhulkuddus';
+// const stringArray = Array.from(inputString)
 
-function countVowel(stringArray){
-let countVowels = 0;
-let vowel = ['a','A','E','e','I','O','o','u','U']
+// function countVowel(stringArray){
+// let countVowels = 0;
+// let vowel = ['a','A','E','e','I','O','o','u','U']
 
-for(let i =0; i<=stringArray.length; i++){
+// for(let i =0; i<=stringArray.length; i++){
 
- if(vowel.indexOf(stringArray[i]) !== -1){
-    countVowels ++
- }
+//  if(vowel.indexOf(stringArray[i]) !== -1){
+//     countVowels ++
+//  }
+// }
+// return countVowels;
+// }
+// const result = countVowel(stringArray);
+// console.log(result);
+// **Problem 5: Reverse a String**
+// Write a function that reverses a string without using the built-in `reverse()` method.
+
+const string = 'Ruhulkuddus'
+function reverseString(string){
+   let reverseString = [];
+   
+   for(let i = string.length -1; i>= 0; i--){
+      reverseString.push(string[i])
+   }
+   let carentString = reverseString.join('');
+   return carentString
 }
-return countVowels;
-}
-const result = countVowel(stringArray);
-console.log(result);
+console.log(reverseString(string));
