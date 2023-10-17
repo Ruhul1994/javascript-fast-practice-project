@@ -96,14 +96,24 @@
 // **Problem 5: Reverse a String**
 // Write a function that reverses a string without using the built-in `reverse()` method.
 
-const string = 'Ruhulkuddus'
-function reverseString(string){
-   let reverseString = [];
+// const string = 'Ruhulkuddus'
+// function reverseString(string){
+//    let reverseString = [];
    
-   for(let i = string.length -1; i>= 0; i--){
-      reverseString.push(string[i])
+//    for(let i = string.length -1; i>= 0; i--){
+//       reverseString.push(string[i])
+//    }
+//    let carentString = reverseString.join('');
+//    return carentString
+// }
+// console.log(reverseString(string));
+
+const string = 'nihid';
+function reverse (string){
+   let reverseString = '';
+   for(let i = string.length -1; i>=0; i--){
+    reverseString += string[i]
    }
-   let carentString = reverseString.join('');
-   return carentString
+   return reverseString;
 }
-console.log(reverseString(string));
+console.log(reverse(string));
