@@ -71,29 +71,25 @@
 // }
 // console.log(fibonacci(4));
 
-function fibonakiWithloop(n){
-    if(n === 0){
-    return 0; 
-    }else if(n === 1){
-        return 1;
-    }
-    let prev = 0;
-    let carrentv = 1;
-    let result = "" ;
+// 
 
-    for(let i = 2; i<=n; i++){
-        result = prev + carrentv;
-        prev = carrentv;
-        carrentv = result;
-       
-    }
-    return result
-}
-//console.log(fibonakiWithloop(5));
+//Problem 6: Count Vowels
+//Write a function that takes a string as input and counts the number of vowels in it.
 
-function seeFibonaki(n){
-    for(let i=0; i<=n; i++){
-        console.log(`${i} this Fibonaki number is: ${fibonakiWithloop(i)}`);
-    }
+const inputString = 'k.m.ruhulkuddus';
+const stringArray = Array.from(inputString)
+
+function countVowel(stringArray){
+let countVowels = 0;
+let vowel = ['a','A','E','e','I','O','o','u','U']
+
+for(let i =0; i<=stringArray.length; i++){
+
+ if(vowel.indexOf(stringArray[i]) !== -1){
+    countVowels ++
+ }
 }
-seeFibonaki(20)
+return countVowels;
+}
+const result = countVowel(stringArray);
+console.log(result);
