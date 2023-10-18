@@ -108,12 +108,19 @@
 // }
 // console.log(reverseString(string));
 
-const string = 'nihid';
-function reverse (string){
-   let reverseString = '';
-   for(let i = string.length -1; i>=0; i--){
-    reverseString += string[i]
-   }
-   return reverseString;
+// const string = 'nihid';
+// function reverse (string){
+//    let reverseString = '';
+//    for(let i = string.length -1; i>=0; i--){
+//     reverseString += string[i]
+//    }
+//    return reverseString;
+// }
+// console.log(reverse(string));
+
+function add(...rest){
+   let result = rest.reduce((acc,value) => acc+value)
+   return result
 }
-console.log(reverse(string));
+let result = add(1,2,3,4,5,6,12);
+console.log(result);
