@@ -88,10 +88,15 @@ function giveRent(yernMony){
 }
 
 
-giveRent(false)
-.then((e)=>{
-console.log(e);
-})
-.catch((v)=>{
-console.log(v);
-})
+// giveRent(false)
+// .then((e)=>{
+// console.log(e);
+// })
+// .catch((v)=>{
+// console.log(v);
+// })
+function sayHello(){
+   setInterval(()=>{
+      console.log('Hello ruhul')
+   },1000)
+};
