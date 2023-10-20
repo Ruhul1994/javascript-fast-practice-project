@@ -95,8 +95,13 @@ function giveRent(yernMony){
 // .catch((v)=>{
 // console.log(v);
 // })
-function sayHello(){
-   setInterval(()=>{
-      console.log('Hello ruhul')
-   },1000)
-};
+// function sayHello(){
+//    setInterval(()=>{
+//       console.log('Hello ruhul')
+//    },1000)
+// };
+
+function sayTime(){
+   console.log(new Date());
+}
+sayTime()
