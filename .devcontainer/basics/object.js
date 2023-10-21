@@ -142,13 +142,26 @@
 //     console.log(`your country is: ${country}`)
 // };
 
-function User(name,id,isAdmin){
-    this.name = name,
-    this.id = id,
-    this.isAdmin = isAdmin
-}
+// function User(name,id,isAdmin){
+//     this.name = name,
+//     this.id = id,
+//     this.isAdmin = isAdmin
+// }
 
-const user1 = new User('Shafin',1234,false);
-const user2 = new User('Ruhul',232323,true);
-console.log(user1);
-console.log(user2);
+// const user1 = new User('Shafin',1234,false);
+// const user2 = new User('Ruhul',232323,true);
+// console.log(user1);
+// console.log(user2);
+
+
+const myArry = ['Foodpanda','patau'];
+const myobject = {
+    name: 'ruhul',
+    age:31,
+
+}
+Object.prototype.ruhul = function(){
+    console.log(`this function is acces is oll over the object`);
+}
+myobject.ruhul()
+
