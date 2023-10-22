@@ -118,9 +118,19 @@
 // }
 // console.log(reverse(string));
 
-function add(...rest){
-   let result = rest.reduce((acc,value) => acc+value)
-   return result
+// Problem 4: Find the Largest Element
+// Write a function that finds the largest element in an array of numbers.
+
+const score = [99];
+
+function fiendMax(arr){
+let maxNumber = [];
+for(let i = 0; i<arr.length; i++){
+   if(maxNumber<arr[i]){
+      maxNumber = arr[i]
+   }
 }
-let result = add(1,2,3,4,5,6,12);
-console.log(result);
+return maxNumber;
+}
+
+console.log(fiendMax(score));
