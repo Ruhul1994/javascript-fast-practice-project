@@ -121,16 +121,34 @@
 // Problem 4: Find the Largest Element
 // Write a function that finds the largest element in an array of numbers.
 
-const score = [99];
+// const score = [99];
 
-function fiendMax(arr){
-let maxNumber = [];
-for(let i = 0; i<arr.length; i++){
-   if(maxNumber<arr[i]){
-      maxNumber = arr[i]
-   }
-}
-return maxNumber;
-}
+// function fiendMax(arr){
+// let maxNumber = [];
+// for(let i = 0; i<arr.length; i++){
+//    if(maxNumber<arr[i]){
+//       maxNumber = arr[i]
+//    }
+// }
+// return maxNumber;
+// }
 
-console.log(fiendMax(score));
+// console.log(fiendMax(score));
+
+// Problem 2: FizzBuzz
+// Write a function that prints the numbers from 1 to 100. But for multiples of three, print "Fizz" instead of the number, and for the multiples of five, print "Buzz".
+//  For numbers that are multiples of both three and five, print "FizzBuzz".
+
+// function FizzBuzz(number){
+//    if(number % 3 ==0 && number % 5 ==0){
+//       console.log('FizzBuzz');
+//    }else if(number % 3 == 0){
+//       console.log('Fizz');
+//    }else if (number % 5 ==0){
+//       console.log('Buzz');
+//    }else{
+//       console.log(number);
+//    }
+// }
+
+// FizzBuzz(15);
