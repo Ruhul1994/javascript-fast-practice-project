@@ -172,3 +172,8 @@ return true;
 }
 
 console.log(ispalindrome('racecar'));
+
+//when use the  class negates "^" then you replace the all,without your bracket carectat. 
+let text = 'my name is ruhul i have a friend';
+const cleartext = text.replace(/[^have]/gi,'@');
+console.log(cleartext)
