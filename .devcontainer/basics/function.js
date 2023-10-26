@@ -101,13 +101,24 @@ function giveRent(yernMony){
 //    },1000)
 // };
 
-function sayTime(){
-   console.log(new Date());
+// function sayTime(){
+//    console.log(new Date());
+// }
+// sayTime()
+// function add(...rest){
+//    let result = rest.reduce((acc,value) => acc+value)
+//    return result
+// }
+// let result = add(1,2,3,4,5,6,12);
+// console.log(result);
+
+let x = 45
+function y (){
+   x = 25;
+   console.log(`fast: ${x}`);
+   console.log(x);
+   
+
 }
-sayTime()
-function add(...rest){
-   let result = rest.reduce((acc,value) => acc+value)
-   return result
-}
-let result = add(1,2,3,4,5,6,12);
-console.log(result);
+y();
+console.log(x)
