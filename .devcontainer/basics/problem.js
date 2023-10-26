@@ -152,8 +152,27 @@
 //    }
 // }
 // }
-
 // FizzBuzz();
+
+// function fizzBuzz() {
+//    let array = []
+//[note start will be 1]
+//    for (let i = 1; i <= 100; i++) {
+//      if (i % 3 === 0 && i % 5 === 0) {
+//        array.push('FizzBuzz');
+//      } else if (i % 3 === 0) {
+//        array.push('Fizz');
+//      } else if (i % 5 === 0) {
+//        array.push('Buzz');
+//      } else {
+//        array.push(i);
+//      }
+//    }
+//    return array;
+//  }
+ 
+//  console.log(fizzBuzz());
+ 
 // Problem 1: Palindrome Checker
 // Write a function that takes a string as input and returns true if it's a palindrome (reads the same backward as forward), and false otherwise.
 
