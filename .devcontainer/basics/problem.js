@@ -157,23 +157,53 @@
 // Problem 1: Palindrome Checker
 // Write a function that takes a string as input and returns true if it's a palindrome (reads the same backward as forward), and false otherwise.
 
-function ispalindrome(inputString){
-const clinString = inputString.replace(/[^A-Za-z1-9@#$]/g,'').toLowerCase();
-let leftPointer = 0;
-let rightPointer = clinString.length -1;
-while(leftPointer < rightPointer){
-   if(clinString[leftPointer] !== clinString[rightPointer]){
-      return false
+// function ispalindrome(inputString){
+// const clinString = inputString.replace(/[^A-Za-z1-9@#$]/g,'').toLowerCase();
+// let leftPointer = 0;
+// let rightPointer = clinString.length -1;
+// while(leftPointer < rightPointer){
+//    if(clinString[leftPointer] !== clinString[rightPointer]){
+//       return false
+//    }
+//    leftPointer ++;
+//    rightPointer --;
+// }
+// return true;
+// }
+
+// console.log(ispalindrome('racecar'));
+
+// //when use the  class negates "^" then you replace the all,without your bracket carectat. 
+// let text = 'my name is ruhul i have a friend';
+// const cleartext = text.replace(/[^have]/gi,'@');
+// console.log(cleartext)
+
+// Problem 1: Anagram Checker
+// Write a function that takes two strings as input and determines if they are anagrams of each other.
+//  Anagrams are words or phrases formed by rearranging the letters of a different word or phrase, using all the original letters exactly once.
+
+
+function areAnagram(string1,string2){
+   // Replace the space and convert to lowercase.
+   const cleanString1 = string1.replace(/\s/g,'').toLowerCase();
+   const cleanString2 = string2.replace(/\s/g,'').toLowerCase();
+
+   if(cleanString1.length !== cleanString2.length){
+      return false;
    }
-   leftPointer ++;
-   rightPointer --;
-}
-return true;
-}
+//Note = ['if you not use the cotetion in join method then it added the coma']
+   const sortString1 = cleanString1.split('').sort().join('');
+   const sortString2 = cleanString2.split('').sort().join('');
 
-console.log(ispalindrome('racecar'));
+   return sortString1 === sortString2;
 
-//when use the  class negates "^" then you replace the all,without your bracket carectat. 
-let text = 'my name is ruhul i have a friend';
-const cleartext = text.replace(/[^have]/gi,'@');
-console.log(cleartext)
+
+}
+const string1= "Listen";
+const string2="Silent";
+
+if (areAnagram(string1,string2)){
+   console.log(`'${string1}' and ${string2} are Anagram `)
+}else{
+   console.log(`${string1} and ${string2} are not Anagram.`)
+}
