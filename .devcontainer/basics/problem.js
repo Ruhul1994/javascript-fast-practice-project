@@ -202,27 +202,41 @@
 //  Anagrams are words or phrases formed by rearranging the letters of a different word or phrase, using all the original letters exactly once.
 
 
-function areAnagram(string1,string2){
-   // Replace the space and convert to lowercase.
-   const cleanString1 = string1.replace(/\s/g,'').toLowerCase();
-   const cleanString2 = string2.replace(/\s/g,'').toLowerCase();
+// function areAnagram(string1,string2){
+//    // Replace the space and convert to lowercase.
+//    const cleanString1 = string1.replace(/\s/g,'').toLowerCase();
+//    const cleanString2 = string2.replace(/\s/g,'').toLowerCase();
 
-   if(cleanString1.length !== cleanString2.length){
-      return false;
+//    if(cleanString1.length !== cleanString2.length){
+//       return false;
+//    }
+// //Note = ['if you not use the cotetion in join method then it added the coma']
+//    const sortString1 = cleanString1.split('').sort().join('');
+//    const sortString2 = cleanString2.split('').sort().join('');
+
+//    return sortString1 === sortString2;
+
+
+// }
+// const string1= "Listen";
+// const string2="Silent";
+
+// if (areAnagram(string1,string2)){
+//    console.log(`'${string1}' and ${string2} are Anagram `)
+// }else{
+//    console.log(`${string1} and ${string2} are not Anagram.`)
+// }
+
+// Problem 2: Sum of Array Elements
+// Write a function that calculates the sum of all elements in an array of numbers.
+
+const myarry = [1,2,3,4,5,6,7];
+
+function addArry(arr){
+   let sam = 0;
+   for(let i=0; i<=arr.length; i++){
+      sum += arr[i];
    }
-//Note = ['if you not use the cotetion in join method then it added the coma']
-   const sortString1 = cleanString1.split('').sort().join('');
-   const sortString2 = cleanString2.split('').sort().join('');
-
-   return sortString1 === sortString2;
-
-
+   return console.log(`the total sum is ${sum}`)
 }
-const string1= "Listen";
-const string2="Silent";
-
-if (areAnagram(string1,string2)){
-   console.log(`'${string1}' and ${string2} are Anagram `)
-}else{
-   console.log(`${string1} and ${string2} are not Anagram.`)
-}
+addArry(myarry);
