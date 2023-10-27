@@ -230,13 +230,26 @@
 // Problem 2: Sum of Array Elements
 // Write a function that calculates the sum of all elements in an array of numbers.
 
-const myarry = [1,2,3,4,5,6,7];
+// console.time('the imparetive way')
+// const myarry = [1,2,3];
+
+// function addArry(arr){
+//    let sum = 0;
+//    for(let i=0; i<arr.length; i++){
+//       sum += arr[i];
+//    }
+//    return console.log(`the total sum is ${sum}`)
+// }
+// addArry(myarry);
+// console.timeEnd('the imparetive way')
 
 function addArry(arr){
-   let sam = 0;
-   for(let i=0; i<=arr.length; i++){
-      sum += arr[i];
-   }
-   return console.log(`the total sum is ${sum}`)
+  return arr.reduce((accu,carentvalue) =>{
+   return accu + carentvalue;
+   },0)
+   
 }
-addArry(myarry);
+
+const myArray = [1,2,3];
+const result = addArry(myArray);
+console.log(`the total tesult is ${result}`)
