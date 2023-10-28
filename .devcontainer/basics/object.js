@@ -154,14 +154,27 @@
 // console.log(user2);
 
 
-const myArry = ['Foodpanda','patau'];
-const myobject = {
-    name: 'ruhul',
-    age:31,
+// const myArry = ['Foodpanda','patau'];
+// const myobject = {
+//     name: 'ruhul',
+//     age:31,
 
-}
-Object.prototype.ruhul = function(){
-    console.log(`this function is acces is oll over the object`);
-}
-myobject.ruhul()
+// }
+// Object.prototype.ruhul = function(){
+//     console.log(`this function is acces is oll over the object`);
+// }
+// myobject.ruhul()
 
+console.log(Math.PI)
+const discriptor = Object.getOwnPropertyDescriptor(Math, "PI");
+console.log(discriptor);
+
+newobject = {
+    name:'ruhul',
+    age:31
+}
+console.log(Object.getOwnPropertyDescriptor(newobject,'name'));
+Object.defineProperty(newobject, 'name', {
+    writable:false, enumerable:false
+});
+console.log(Object.getOwnPropertyDescriptor(newobject,'name'));
