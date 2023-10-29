@@ -243,13 +243,24 @@
 // addArry(myarry);
 // console.timeEnd('the imparetive way')
 
-function addArry(arr){
-  return arr.reduce((accu,carentvalue) =>{
-   return accu + carentvalue;
-   },0)
+// function addArry(arr){
+//   return arr.reduce((accu,carentvalue) =>{
+//    return accu + carentvalue;
+//    },0)
    
-}
+// }
 
-const myArray = [1,2,3];
-const result = addArry(myArray);
-console.log(`the total tesult is ${result}`)
+// const myArray = [1,2,3];
+// const result = addArry(myArray);
+// console.log(`the total tesult is ${result}`)
+
+function toTitleCase(sentence){
+let words = sentence.toLowerCase().split(' ');
+
+for(let i=0; i<words.length; i++){
+  words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+}
+return words.join(' ');
+}
+let inputSentense = 'hellow How Are you mina and razu';
+let TitleCase = console.log(toTitleCase(inputSentense));
