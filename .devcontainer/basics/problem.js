@@ -302,14 +302,16 @@
 // console.log(missingNum);
 
 
-function findMissingNumber(array) {
-  const n = array.length + 1; // Adding 1 to consider the missing number itself
-  const expectedSum = (n * (n + 1)) / 2;
-  const currentSum = array.reduce((sum, num) => sum + num, 0);
-  const missingNumber = expectedSum - currentSum;
-  return missingNumber;
+// the optimise code is hear.
+
+function findMissingNumber(array){
+  const n = array.length + 1;
+  const aspectSum = (n * (n +1))/2;
+  const currentSum = array.reduce((sum,num)=> sum+num,0);
+  const missingNumber = aspectSum - currentSum;
+  return missingNumber
 }
 
-const numbers = [1, 2, 3, 5, 6];
-const missingNum = findMissingNumber(numbers);
-console.log(missingNum);
+const numers =[1,2,3,4,6,7];
+const missingNum = findMissingNumber(numers);
+console.log(`your missing number is: ${missingNum}`);
