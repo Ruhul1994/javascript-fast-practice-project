@@ -254,13 +254,36 @@
 // const result = addArry(myArray);
 // console.log(`the total tesult is ${result}`)
 
-function toTitleCase(sentence){
-let words = sentence.toLowerCase().split(' ');
+// function toTitleCase(sentence){
+// let words = sentence.toLowerCase().split(' ');
 
-for(let i=0; i<words.length; i++){
-  words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+// for(let i=0; i<words.length; i++){
+//   words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+// }
+// return words.join(' ');
+// }
+// let inputSentense = 'hellow How Are you mina and razu';
+// let TitleCase = console.log(toTitleCase(inputSentense));
+
+
+// **Problem 4: Find Missing Number**
+// You are given an array containing n distinct numbers taken from 0, 1, 2, ..., n.
+//  Write a function to find the one number that is missing from the array.
+
+function FiendMissigNumber(array){
+const n = array.length;
+const aspectedSum = (n * (n +1))/2;
+console.log(aspectedSum);
+let actualSum = 0;
+
+for(let i = 0; i<=n ; i++){
+  actualSum += array[i];
 }
-return words.join(' ');
+const missingNumber = aspectedSum - actualSum;
+return missingNumber;
+
 }
-let inputSentense = 'hellow How Are you mina and razu';
-let TitleCase = console.log(toTitleCase(inputSentense));
+
+const number = [1+3+4+2+6+n];
+const missigNumber = FiendMissigNumber(number);
+console.log(missigNumber);

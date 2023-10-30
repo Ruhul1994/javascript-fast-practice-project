@@ -75,17 +75,17 @@
 // const sumona = new Student ('sumon',21,22);
 // console.log(sumona.name);
 
-function giveRent(yernMony){
-   return new Promise((resolve,reject)=>{
-      setTimeout(()=>{
-         if(yernMony){
-            resolve('pay the rent')
-         } else{
-            reject(new Error('Dont pay the rent'))
-         }
-      },2000)
-   })
-}
+// function giveRent(yernMony){
+//    return new Promise((resolve,reject)=>{
+//       setTimeout(()=>{
+//          if(yernMony){
+//             resolve('pay the rent')
+//          } else{
+//             reject(new Error('Dont pay the rent'))
+//          }
+//       },2000)
+//    })
+// }
 
 
 // giveRent(false)
