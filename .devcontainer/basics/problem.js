@@ -270,20 +270,46 @@
 // You are given an array containing n distinct numbers taken from 0, 1, 2, ..., n.
 //  Write a function to find the one number that is missing from the array.
 
-function FiendMissigNumber(array){
-const n = array.length;
-const aspectedSum = (n * (n +1))/2;
-console.log(aspectedSum);
-let actualSum = 0;
+// function findMissingNumber(array){
+// const n = array.length + 1;
+// const expectSum = (n * ( n + 1 ))/2;
+// let curentSum =0;
+// for(let i=0; i<= n; i++){
+//   curentSum += array[i -1]
+// }
+// const mussingNumber = expectSum - curentSum;
+// return mussingNumber
+// }
 
-for(let i = 0; i<=n ; i++){
-  actualSum += array[i];
+// const numbers = [1,2,3,5,6,7];
+// const mussingNum = findMissingNumber(numbers);
+// console.log(mussingNum);
+
+// function findMissingNumber(array){
+//   const n = array.length;
+//   const expectSum = ((n+1)* ((n+1) + 1)) / 2;
+//   let currentSum = 0;
+//   for(let i = 0; i <n; i++){
+//     currentSum += array[i];
+//     console.log(currentSum);
+//   }
+//   const missingNumber = expectSum - currentSum;
+//   return missingNumber;
+// }
+
+// const numbers = [1, 2, 3, 5, 6];
+// const missingNum = findMissingNumber(numbers);
+// console.log(missingNum);
+
+
+function findMissingNumber(array) {
+  const n = array.length + 1; // Adding 1 to consider the missing number itself
+  const expectedSum = (n * (n + 1)) / 2;
+  const currentSum = array.reduce((sum, num) => sum + num, 0);
+  const missingNumber = expectedSum - currentSum;
+  return missingNumber;
 }
-const missingNumber = aspectedSum - actualSum;
-return missingNumber;
 
-}
-
-const number = [1+3+4+2+6+n];
-const missigNumber = FiendMissigNumber(number);
-console.log(missigNumber);
+const numbers = [1, 2, 3, 5, 6];
+const missingNum = findMissingNumber(numbers);
+console.log(missingNum);
