@@ -320,20 +320,38 @@
 //  **Problem 5: Chunk Array**
 //Write a function that divides an array into smaller arrays of a specified size.
 
-function chunkArray (inputArray, chunkSize){
-  let resultArray = [];
+// function chunkArray (inputArray, chunkSize){
+//   let resultArray = [];
 
-  for(let i=0; i < inputArray.length; i += chunkSize){
-    //console.log(`inshial value is = ${i}`)
-    let ichunkSize = i + chunkSize
-    //console.log(`ichunkSize is : ${ichunkSize}`)
-    let chunk = inputArray.slice(i, ichunkSize);
-   // console.log(chunk); 
-    resultArray.push(chunk)
-  }
-  return resultArray;
+//   for(let i=0; i < inputArray.length; i += chunkSize){
+//     //console.log(`inshial value is = ${i}`)
+//     let ichunkSize = i + chunkSize
+//     //console.log(`ichunkSize is : ${ichunkSize}`)
+//     let chunk = inputArray.slice(i, ichunkSize);
+//    // console.log(chunk); 
+//     resultArray.push(chunk)
+//   }
+//   return resultArray;
+// }
+
+// const myArray = [1,2,3,4,5,6,7,8,9,10,11];
+// const FinalArray = chunkArray (myArray, 2);
+// console.log(FinalArray);  
+
+//[1,2,3,4,5]
+//[[1,2],[3,4]]
+
+function chunkArrayFunction(array,arraySize){
+
+  let resultArray =[]
+ let index =0;
+ while(index<array.length){
+resultArray.push(array.slice(index, index + arraySize))
+index += arraySize
+ }
+ return resultArray;
 }
 
 const myArray = [1,2,3,4,5,6,7,8,9,10,11];
-const FinalArray = chunkArray (myArray, 2);
-console.log(FinalArray);  
+const FinalArray = chunkArrayFunction(myArray, 2);
+console.log(FinalArray); 
