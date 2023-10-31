@@ -304,14 +304,36 @@
 
 // the optimise code is hear.
 
-function findMissingNumber(array){
-  const n = array.length + 1;
-  const aspectSum = (n * (n +1))/2;
-  const currentSum = array.reduce((sum,num)=> sum+num,0);
-  const missingNumber = aspectSum - currentSum;
-  return missingNumber
+// function findMissingNumber(array){
+//   const n = array.length + 1;
+//   const aspectSum = (n * (n +1))/2;
+//   const currentSum = array.reduce((sum,num)=> sum+num,0);
+//   const missingNumber = aspectSum - currentSum;
+//   return missingNumber
+// }
+
+// const numers =[1,2,3,4,6,7];
+// const missingNum = findMissingNumber(numers);
+// console.log(`your missing number is: ${missingNum}`);
+
+
+//  **Problem 5: Chunk Array**
+//Write a function that divides an array into smaller arrays of a specified size.
+
+function chunkArray (inputArray, chunkSize){
+  let resultArray = [];
+
+  for(let i=0; i < inputArray.length; i += chunkSize){
+    //console.log(`inshial value is = ${i}`)
+    let ichunkSize = i + chunkSize
+    //console.log(`ichunkSize is : ${ichunkSize}`)
+    let chunk = inputArray.slice(i, ichunkSize);
+   // console.log(chunk); 
+    resultArray.push(chunk)
+  }
+  return resultArray;
 }
 
-const numers =[1,2,3,4,6,7];
-const missingNum = findMissingNumber(numers);
-console.log(`your missing number is: ${missingNum}`);
+const myArray = [1,2,3,4,5,6,7,8,9,10,11];
+const FinalArray = chunkArray (myArray, 2);
+console.log(FinalArray);  
