@@ -112,10 +112,13 @@
 
 // console.log(result);
 
-const arry =[1,2,4,5,6,7,8,9,12];
-// function squreItem(item){
-//   return item * item
-// }
+// const arry =[1,2,4,5,6,7,8,9,12];
+// // function squreItem(item){
+// //   return item * item
+// // }
 
-const newarry = arry.map(item => item + item);
-console.log(newarry);
+// const newarry = arry.map(item => item + item);
+// console.log(newarry);
+
+let fruts = [ 'apple','mango','orenge','jam'];
+console.log(fruts.indexOf('orenge',3));
