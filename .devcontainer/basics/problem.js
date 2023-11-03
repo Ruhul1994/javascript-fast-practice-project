@@ -341,17 +341,50 @@
 //[1,2,3,4,5]
 //[[1,2],[3,4]]
 
-function chunkArrayFunction(array,arraySize){
+// function chunkArrayFunction(array,arraySize){
 
-  let resultArray =[]
- let index =0;
- while(index<array.length){
-resultArray.push(array.slice(index, index + arraySize))
-index += arraySize
+//   let resultArray =[]
+//  let index =0;
+//  while(index<array.length){
+// resultArray.push(array.slice(index, index + arraySize))
+// index += arraySize
+//  }
+//  return resultArray;
+// }
+
+// const myArray = [1,2,3,4,5,6,7,8,9,10,11];
+// const FinalArray = chunkArrayFunction(myArray, 2);
+// console.log(FinalArray);
+
+// Problem 6: Caesar Cipher
+// Write a function that takes a string and a number (the shift value) as input and performs a Caesar Cipher shift on the letters of the string.
+//  For example, with a shift of 1, 'A' would be replaced by 'B', 'B' would become 'C', and so on.
+
+function caesarCipher(text,shiftNum) {
+  const alfabate = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let result = '';
+    for(let i= 0; i<text.length; i++){
+    let char = text.toUpperCase();
+
+    if(alfabate.indexOf(char) === -1){
+      result += char[i]
+    }else {
+      let shiftIndex = (alfabate.indexOf(char) + shiftNum)%26
+      if(shiftIndex <0){
+        shiftIndex += 26
+      }
+
+      if(text[i].toUpperCase === text[i]){
+         result += alfabate[shiftIndex];
+      }else{
+        result += alfabate[shiftIndex].toLowerCase();
+      }
+
+  }
+} 
+return result; 
  }
- return resultArray;
-}
 
-const myArray = [1,2,3,4,5,6,7,8,9,10,11];
-const FinalArray = chunkArrayFunction(myArray, 2);
-console.log(FinalArray); 
+ const inputText = 'i love Bangladesh';
+const cipherText =  caesarCipher(inputText,2);
+console.log(cipherText);
