@@ -359,32 +359,84 @@
 // Problem 6: Caesar Cipher
 // Write a function that takes a string and a number (the shift value) as input and performs a Caesar Cipher shift on the letters of the string.
 //  For example, with a shift of 1, 'A' would be replaced by 'B', 'B' would become 'C', and so on.
+//wrong solution.
+// function caesarCipher(text,shiftNum) {
+//   const alfabate = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+//     let result = '';
+//     for(let i= 0; i<text.length; i++){
+//     let char = text.toUpperCase();
 
-function caesarCipher(text,shiftNum) {
-  const alfabate = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    let result = '';
-    for(let i= 0; i<text.length; i++){
-    let char = text.toUpperCase();
+//     if(alfabate.indexOf(char) === -1){
+//       result += char[i]
+//     }else {
+//       let shiftIndex = (alfabate.indexOf(char) + shiftNum)%26
+//       if(shiftIndex <0){
+//         shiftIndex += 26
+//       }
 
-    if(alfabate.indexOf(char) === -1){
-      result += char[i]
-    }else {
-      let shiftIndex = (alfabate.indexOf(char) + shiftNum)%26
-      if(shiftIndex <0){
-        shiftIndex += 26
-      }
+//       if(text[i].toUpperCase === text[i]){
+//          result += alfabate[shiftIndex];
+//       }else{
+//         result += alfabate[shiftIndex].toLowerCase();
+//       }
 
-      if(text[i].toUpperCase === text[i]){
-         result += alfabate[shiftIndex];
-      }else{
-        result += alfabate[shiftIndex].toLowerCase();
-      }
+//   }
+// } 
+// return result; 
+//  }
 
-  }
-} 
-return result; 
- }
+//  const inputText = 'i love Bangladesh';
+// const cipherText =  caesarCipher(inputText,2);
+// console.log(cipherText);
 
- const inputText = 'i love Bangladesh';
-const cipherText =  caesarCipher(inputText,2);
-console.log(cipherText);
+// solution2;
+
+// function caesarCipher(text,shift){
+//   const alfabate = 'abcdefghijklmnopqrstuvwxyz';
+//   let result ='';
+// for(let i=0; i<text.length; i++){
+//   let char = text[i]
+//   if(alfabate.includes(char.toLowerCase())){
+//     const isUpperCase = char === char.toUpperCase();
+//     char = char.toLowerCase();
+//     const charIndex = alfabate.indexOf(char);
+//     const shiftIndex = (charIndex + shift)%26;
+//     const shiftChar = alfabate[shiftIndex];
+
+//     result += isUpperCase ? shiftChar.toUpperCase() : shiftChar;
+//   }else{
+//     result += char;
+//   }
+// }
+// return result;
+
+// }
+// const inputText = 'i love MYSelf!!';
+// const cipherText =  caesarCipher(inputText,2);
+// console.log(cipherText);
+
+//this is the before position of cipherText.
+
+// function caesarCipher(text,shift){
+//   const alfabate = 'abcdefghijklmnopqrstuvwxyz';
+//   let result ='';
+// for(let i=0; i<text.length; i++){
+//   let char = text[i]
+//   if(alfabate.includes(char.toLowerCase())){
+//     const isUpperCase = char === char.toUpperCase();
+//     char = char.toLowerCase();
+//     const charIndex = alfabate.indexOf(char);
+//     const shiftIndex = (charIndex - shift + 26)%26;
+//     const shiftChar = alfabate[shiftIndex];
+
+//     result += isUpperCase ? shiftChar.toUpperCase() : shiftChar;
+//   }else{
+//     result += char;
+//   }
+// }
+// return result;
+
+// }
+// const inputText = 'k nqxg OAUgnh!!';
+// const cipherText =  caesarCipher(inputText,2);
+// console.log(cipherText);
