@@ -440,8 +440,21 @@
 // const inputText = 'k nqxg OAUgnh!!';
 // const cipherText =  caesarCipher(inputText,2);
 // console.log(cipherText);
+
 // Problem 7: Validate Email Address
 // Write a function that validates an email address. 
 // The function should return true if the email address is valid and false otherwise. 
 // For simplicity, you can assume that a valid email address has a single "@" symbol and a single "." symbol.
 
+const isvalidEmail = (email) => {
+    const emailRejex =  /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return  emailRejex.test(email);
+};
+
+// Example usage:
+let email1 = "example@example.com";
+let email2 = "example@.com";
+let email3 = "@example.com";
+let email4 = "example.com";
+
+console.log(isvalidEmail(email1));
