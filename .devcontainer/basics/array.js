@@ -120,5 +120,9 @@
 // const newarry = arry.map(item => item + item);
 // console.log(newarry);
 
-let fruts = [ 'apple','mango','orenge','jam'];
-console.log(fruts.indexOf('orenge',3));
+// let fruts = [ 'apple','mango','orenge','jam'];
+// console.log(fruts.indexOf('orenge',3));
+// dir work in wanly browsarl
+// let myArray = new Array()
+// myArray.push('ruhul', 'nahid');
+// console.dir(Array.prototype);
