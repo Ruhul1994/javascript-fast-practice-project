@@ -2,20 +2,20 @@
 
 //  const NumberFast = true;
 //  console.log(typeof (NumberFast));
-let userName ='john';
+// let userName ='john';
 
-function showMessage(){
+// function showMessage(){
 // let userName = "Bob";
-let message = 'Hello,'+ userName;
+// let message = 'Hello,'+ userName;
 // alert(message);
-console.log(message);                   
-}
+//console.log(message);                   
+//}
 
-function randomNumber(){
-let myNumber = Math.random();
-return myNumber;
-}
-randomNumber();
+// function randomNumber(){
+// let myNumber = Math.random();
+// return myNumber;
+// }
+//randomNumber();
 /*192.168.31.140
 5A:2F:39:22:75:15 	17min48s 	
 realme-C11-2021 	192.168.31.6
@@ -27,10 +27,14 @@ Galaxy-A01 	192.168.31.204
 Ruhul 	192.168.31.144
 48:A4:72:69:33:59*/
 
-function griting(){
-    console.log('good morning');
-}
-var griting = function(){
-    console.log('welcome!');
-}
-console.log (griting);
+// function griting(){
+//     console.log('good morning');
+// }
+// var griting = function(){
+//     console.log('welcome!');
+// }
+// console.log (griting);
+
+let a =Number(2);
+let str = new String(5); 
+console.log(str.valueOf()==4);
