@@ -462,6 +462,8 @@
 // Write a function that finds the longest word in a sentence.
 // The function should return the longest word and its length.
 
-function LongestWordFunction(sentense){
-    const word = 
+ function fiendLongestWordFunction(sentense){
+     const word = sentense.split()
+     let longestword = '';
+     let maxlenth = 0;
 }
