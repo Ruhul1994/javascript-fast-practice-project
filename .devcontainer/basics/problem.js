@@ -462,8 +462,29 @@
 // Write a function that finds the longest word in a sentence.
 // The function should return the longest word and its length.
 
- function fiendLongestWordFunction(sentense){
-     const word = sentense.split()
-     let longestword = '';
-     let maxlenth = 0;
+function findsLongestWord(sentense){
+    // separet the word
+    //  when want word then use the space in cottetion.
+    let word = sentense.split(' ')
+    let longestWord = '';
+    let MaxWordLenth = 0;
+
+    for(let letter of word){
+        // clean the extra crecter in word.
+        const cleanWord = letter.replace(/[^\w]/g, '');
+        if(cleanWord.length > MaxWordLenth){
+           MaxWordLenth = cleanWord.length; 
+           longestWord  = cleanWord;
+
+        } 
+
+    }
+    return {
+        word: longestWord ,
+        length:MaxWordLenth 
+    }
 }
+
+const text = 'i love my country';
+const result = findsLongestWord(text);
+console.log(`the longest word is "${result.word}" and this length is ${result.length}`);
