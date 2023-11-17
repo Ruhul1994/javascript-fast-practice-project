@@ -51,32 +51,43 @@
 //    score ++ ;
 // } while(score<=12) 
 
-const priceCart =[
-    {
-        BookName : 'Amar Book',
-        price : 20
-    },
-    {
-        BookName : 'golper Book',
-        price : 30
-    },
-    {
-        BookName : 'Programing Book',
-        price : 60
-    },
-    {
-        BookName : 'cartoon Book',
-        price : 25
-    },
-    {
-        BookName : 'Amar Book',
-        price : 20
-    },
-    {
-        BookName : 'History Book',
-        price : 12
-    }
-]
+// const priceCart =[
+//     {
+//         BookName : 'Amar Book',
+//         price : 20
+//     },
+//     {
+//         BookName : 'golper Book',
+//         price : 30
+//     },
+//     {
+//         BookName : 'Programing Book',
+//         price : 60
+//     },
+//     {
+//         BookName : 'cartoon Book',
+//         price : 25
+//     },
+//     {
+//         BookName : 'Amar Book',
+//         price : 20
+//     },
+//     {
+//         BookName : 'History Book',
+//         price : 12
+//     }
+// ]
 
-const total = priceCart.reduce((acc,carentval)=> acc + carentval.price,0);
-console.log(total);
+// const total = priceCart.reduce((acc,carentval)=> acc + carentval.price,0);
+// console.log(total);
+
+
+function bigo(n){
+    for(let i=0; i<= n; i++){
+        for(let j=0; j<=n; j++){
+            console.log(`i= ${i} , j= ${j}`);
+        }
+    }
+}
+
+bigo(4)
