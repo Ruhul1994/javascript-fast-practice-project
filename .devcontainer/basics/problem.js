@@ -461,7 +461,7 @@
 // Problem 8: Longest Word
 // Write a function that finds the longest word in a sentence.
 // The function should return the longest word and its length.
-
+console.time('findsLongestWord')
 function findsLongestWord(sentense){
     // separet the word
     //  when want word then use the space in cottetion.
@@ -488,3 +488,6 @@ function findsLongestWord(sentense){
 const text = 'i love my country';
 const result = findsLongestWord(text);
 console.log(`the longest word is "${result.word}" and this length is ${result.length}`);
+console.timeEnd('findsLongestWord')
+
+
