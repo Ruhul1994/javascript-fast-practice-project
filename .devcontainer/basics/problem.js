@@ -461,33 +461,48 @@
 // Problem 8: Longest Word
 // Write a function that finds the longest word in a sentence.
 // The function should return the longest word and its length.
-console.time('findsLongestWord')
-function findsLongestWord(sentense){
-    // separet the word
-    //  when want word then use the space in cottetion.
-    let word = sentense.split(' ')
-    let longestWord = '';
-    let MaxWordLenth = 0;
+// console.time('findsLongestWord')
+// function findsLongestWord(sentense){
+//     // separet the word
+//     //  when want word then use the space in cottetion.
+//     let word = sentense.split(' ')
+//     let longestWord = '';
+//     let MaxWordLenth = 0;
 
-    for(let letter of word){
-        // clean the extra crecter in word.
-        const cleanWord = letter.replace(/[^\w]/g, '');
-        if(cleanWord.length > MaxWordLenth){
-           MaxWordLenth = cleanWord.length; 
-           longestWord  = cleanWord;
+//     for(let letter of word){
+//         // clean the extra crecter in word.
+//         const cleanWord = letter.replace(/[^\w]/g, '');
+//         if(cleanWord.length > MaxWordLenth){
+//            MaxWordLenth = cleanWord.length; 
+//            longestWord  = cleanWord;
 
-        } 
+//         } 
 
+//     }
+//     return {
+//         word: longestWord ,
+//         length:MaxWordLenth 
+//     }
+// }
+
+// const text = 'i love my country';
+// const result = findsLongestWord(text);
+// console.log(`the longest word is "${result.word}" and this length is ${result.length}`);
+// console.timeEnd('findsLongestWord')
+
+
+//prime number chicking.
+
+function isPrime(n){
+    if(n < 2){
+        return console.log(`${n} is not a prime number.`);
     }
-    return {
-        word: longestWord ,
-        length:MaxWordLenth 
+    for(let i = 2; i < n; i++){
+        if(n % i === 0){
+            return console.log(`${n} is not a prime number.`);
+        }
     }
+    return console.log(`${n} is a prime number.`)
 }
-
-const text = 'i love my country';
-const result = findsLongestWord(text);
-console.log(`the longest word is "${result.word}" and this length is ${result.length}`);
-console.timeEnd('findsLongestWord')
-
+isPrime(2);
 
