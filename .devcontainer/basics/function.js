@@ -112,13 +112,33 @@
 // let result = add(1,2,3,4,5,6,12);
 // console.log(result);
 
-let x = 45
-function y (){
-   x = 25;
-   console.log(`fast: ${x}`);
-   console.log(x);
+// let x = 45
+// function y (){
+//    x = 25;
+//    console.log(`fast: ${x}`);
+//    console.log(x);
    
 
-}
-y();
-console.log(x)
+// }
+// y();
+// console.log(x)
+
+
+// const added = (a,b) =>{
+// var result = a+b;
+// return result;
+// }
+
+// console.log(added(5,3));
+
+
+
+
+
+
+
+
+
+
+
+
