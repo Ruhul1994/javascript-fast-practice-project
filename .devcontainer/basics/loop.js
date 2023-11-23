@@ -82,12 +82,22 @@
 // console.log(total);
 
 
-function bigo(n){
-    for(let i=0; i<= n; i++){
-        for(let j=0; j<=n; j++){
-            console.log(`i= ${i} , j= ${j}`);
-        }
-    }
-}
+// function bigo(n){
+//     for(let i=0; i<= n; i++){
+//         for(let j=0; j<=n; j++){
+//             console.log(`i= ${i} , j= ${j}`);
+//         }
+//     }
+// }
 
-bigo(4)
+// bigo(4)
+
+// let friends = ['Monir','sakil','nahid','kajol','minar','sefil'];
+// function Gritings(friends){
+//     let i =0;
+//     while (i <friends.length){
+//         console.log(`Eid mobarak ${friends[i]}`)
+//         i++
+//     }
+// }
+// Gritings(friends);
