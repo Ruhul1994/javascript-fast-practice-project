@@ -131,10 +131,22 @@
 
 // console.log(added(5,3));
 
+// let myArray =[1,2,3,4];
+// let resultArray = [];
+// function multiplyArray(array){
+//     for(let i=0; i<array.length; i++){
+//         resultArray.push(array[i]*2);
+//         }
+// return resultArray;
+// }
+
+// console.log(multiplyArray(myArray));
 
 
+// let myArray =[1,2,3,4];
 
-
+// const resultArray = array => array.map(num => num*2);
+// console.log(resultArray(myArray));
 
 
 
