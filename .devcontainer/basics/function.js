@@ -148,6 +148,16 @@
 // const resultArray = array => array.map(num => num*2);
 // console.log(resultArray(myArray));
 
+const workers = [
+    {Name:'Sakib', Age: 37},
+    {Name:'tamim', Age: 47},
+    {Name:'Shoriful', Age: 30},
+    {Name:'Mahamud', Age: 34},
+    {Name:'Mina', Age: 23},
+    {Name:'jibon', Age: 25},
+    {Name:'Megna', Age: 29},
+]
+// you can fiend the theres age is less then 25,
 
 
 
