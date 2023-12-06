@@ -142,3 +142,10 @@ const myArray = [
 // must be use parenthisis / fast braket.
 // const c = myArray.at(-2);
 // console.log(c)
+
+const c = myArray.fill({name:'nahid',age:45},-1);
+ console.log(c)
+
+  const k = myArray.at(-2);
+ console.log(k)
+ console.log(myArray);
