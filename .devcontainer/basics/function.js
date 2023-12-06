@@ -159,7 +159,12 @@ const workers = [
 ]
 // you can fiend the theres age is less then 25,
 
-
+const cat = function drowCat(howManyTime){
+    for(let i=0; i<howManyTime; i++){
+        console.log('=^.^=');
+    }
+};
+cat(12);
 
 
 
