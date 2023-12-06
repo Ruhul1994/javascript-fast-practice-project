@@ -126,3 +126,15 @@
 // let myArray = new Array()
 // myArray.push('ruhul', 'nahid');
 // console.dir(Array.prototype);
+// for at method for using last method charch,
+const myArray = [
+    {name:'hore', age:12},
+   { name:'mina', age:13},
+   {name:'tina', age:15},
+]
+const a = myArray.at(-1);
+console.log(a)
+
+const mynewArray = [1,2,3,44,5,6];
+const b = mynewArray.at(-2);
+console.log(b)
