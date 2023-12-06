@@ -130,11 +130,15 @@
 const myArray = [
     {name:'hore', age:12},
    { name:'mina', age:13},
-   {name:'tina', age:15},
+   {name:'tina', age:15}, 
+   {name:'Ruhul', age:25},
 ]
-const a = myArray.at(-1);
-console.log(a)
+// const a = myArray.at(-1);
+// console.log(a)
 
-const mynewArray = [1,2,3,44,5,6];
-const b = mynewArray.at(-2);
-console.log(b)
+// const mynewArray = [1,2,3,44,5,6];
+// const b = mynewArray.at(-2);
+// console.log(b)
+// must be use parenthisis / fast braket.
+// const c = myArray.at(-2);
+// console.log(c)
