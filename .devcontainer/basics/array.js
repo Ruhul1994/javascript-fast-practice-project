@@ -148,4 +148,5 @@ const c = myArray.fill({name:'nahid',age:45},-1);
 
   const k = myArray.at(-2);
  console.log(k)
+const myArray=["Ruhul,nahid,kamal"]
  console.log(myArray);
