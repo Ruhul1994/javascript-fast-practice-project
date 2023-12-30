@@ -170,5 +170,6 @@ function maltiplay(number){
    return number*2
 };
 console.log(maltiplay(6));
+//this function is use for maltiplay.
 
 
