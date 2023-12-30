@@ -159,13 +159,16 @@ const workers = [
 ]
 // you can fiend the theres age is less then 25,
 
-const cat = function drowCat(howManyTime){
-    for(let i=0; i<howManyTime; i++){
-        console.log('=^.^=');
-    }
+// const cat = function drowCat(howManyTime){
+//     for(let i=0; i<howManyTime; i++){
+//         console.log('=^.^=');
+//     }
+// };
+// cat(12);
+
+function maltiplay(number){
+   return number*2
 };
-cat(12);
-
-
+console.log(maltiplay(6));
 
 
