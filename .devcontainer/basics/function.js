@@ -172,3 +172,12 @@ const workers = [
 // console.log(maltiplay(6));
 //this function is use for maltiplay.
 
+function countDown(n){
+    console.log(n);
+    n--
+    if(n > 0){
+      countDown(n);
+    };
+    }
+
+    countDown(6);
