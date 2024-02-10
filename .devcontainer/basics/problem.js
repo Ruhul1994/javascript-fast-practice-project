@@ -493,16 +493,49 @@
 
 //prime number chicking.
 
-function isPrime(n){
-    if(n < 2){
-        return console.log(`${n} is not a prime number.`);
-    }
-    for(let i = 2; i < n; i++){
-        if(n % i === 0){
-            return console.log(`${n} is not a prime number.`);
-        }
-    }
-    return console.log(`${n} is a prime number.`)
-}
-isPrime(2);
+// function isPrime(n){
+//     if(n < 2){
+//         return console.log(`${n} is not a prime number.`);
+//     }
+//     for(let i = 2; i < n; i++){
+//         if(n % i === 0){
+//             return console.log(`${n} is not a prime number.`);
+//         }
+//     }
+//     return console.log(`${n} is a prime number.`)
+// }
+// isPrime(2);
 
+// console.time('not recarsive')
+// function fiendOddNumber(array){
+//     let oddNumber =[];
+//     for(let i=0; i<array.length; i++){
+//         if(array.length=== 0) return;
+//         if(array[i] % 2 !== 0){
+//         oddNumber.push(array[i]);
+            
+//         }
+        
+//     }
+//     return  oddNumber;
+// }
+
+// console.log( fiendOddNumber([0,1,2,3,4,5,6,7,8,9]));
+
+// console.timeEnd('not recarsive');
+
+console.time('recarsive')
+function fiendOddNumber(array){
+    let oddNumber =[];
+    function helper(para){
+    if(para.length === 0) return;
+    if(para[0] % 2 !== 0){
+        oddNumber.push(para[0]);
+    }
+    helper(para.slice(1));
+    }
+    helper(array);
+    return oddNumber;
+}
+console.log( fiendOddNumber([0,1,2,3,4,5,6,7,8,9]));
+console.timeEnd('recarsive');
