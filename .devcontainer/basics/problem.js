@@ -551,3 +551,21 @@
 // }
 
 // console.log(liniarCharch([1,2,3,4,3,5,6,7,8,9,14],14))
+
+function bainarCharch(array,value){
+    let start = 0;
+    let end = array.length -1;
+    while(start <= end){
+        let middle = Math.round((start + end)/2);
+        if(array[middle] === value){
+            return middle;
+        } else if(array[middle] < value){
+            start = middle + 1
+        }else{
+            end = middle - 1;
+        }
+    }
+ return -1;
+}
+
+console.log(bainarCharch([1,2,3,4,6,7,8,9,10,11,12,34,45], 19))
