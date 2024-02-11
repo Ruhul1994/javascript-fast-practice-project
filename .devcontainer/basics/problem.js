@@ -524,18 +524,30 @@
 
 // console.timeEnd('not recarsive');
 
-console.time('recarsive')
-function fiendOddNumber(array){
-    let oddNumber =[];
-    function helper(para){
-    if(para.length === 0) return;
-    if(para[0] % 2 !== 0){
-        oddNumber.push(para[0]);
-    }
-    helper(para.slice(1));
-    }
-    helper(array);
-    return oddNumber;
-}
-console.log( fiendOddNumber([0,1,2,3,4,5,6,7,8,9]));
-console.timeEnd('recarsive');
+// console.time('recarsive')
+// function fiendOddNumber(array){
+//     let oddNumber =[];
+//     function helper(para){
+//     if(para.length === 0) return;
+//     if(para[0] % 2 !== 0){
+//         oddNumber.push(para[0]);
+//     }
+//     helper(para.slice(1));
+//     }
+//     helper(array);
+//     return oddNumber;
+// }
+// console.log( fiendOddNumber([0,1,2,3,4,5,6,7,8,9]));
+// console.timeEnd('recarsive');
+
+// function liniarCharch(array,value){
+//     for(let i=0; i<array.length; i++){
+//         if(array[i] === value){
+//             return i
+//         }else{
+//             -1
+//         }
+//     }
+// }
+
+// console.log(liniarCharch([1,2,3,4,3,5,6,7,8,9,14],14))
