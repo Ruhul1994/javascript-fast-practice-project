@@ -552,20 +552,46 @@
 
 // console.log(liniarCharch([1,2,3,4,3,5,6,7,8,9,14],14))
 
-function bainarCharch(array,value){
-    let start = 0;
-    let end = array.length -1;
-    while(start <= end){
-        let middle = Math.round((start + end)/2);
-        if(array[middle] === value){
-            return middle;
-        } else if(array[middle] < value){
-            start = middle + 1
-        }else{
-            end = middle - 1;
-        }
-    }
- return -1;
-}
+// function bainarCharch(array,value){
+//     let start = 0;
+//     let end = array.length -1;
+//     while(start <= end){
+//         let middle = Math.round((start + end)/2);
+//         if(array[middle] === value){
+//             return middle;
+//         } else if(array[middle] < value){
+//             start = middle + 1
+//         }else{
+//             end = middle - 1;
+//         }
+//     }
+//  return -1;
+// }
 
-console.log(bainarCharch([1,2,3,4,6,7,8,9,10,11,12,34,45], 19))
+// console.log(bainarCharch([1,2,3,4,6,7,8,9,10,11,12,34,45], 19))
+
+//bubbleSort Example.
+// function bubbleSort(array){
+//     let n = array.length;
+//     let swiped;
+
+//     do{
+//         swiped = false;
+//         for(let i=0; i<n-1; i++){
+//             if(array[i] > array[i +1]){
+//                 let temp = array[i];
+//                 array[i] = array[i+1];
+//                 array [i+1] = temp;
+//                 swiped = true;
+//             }
+//         }
+//         n--;
+
+//     }while(swiped){
+//         return array;
+//     }
+// }
+
+// let unSotedArray = [1,2,34,45,6,76,43,34,65,3];
+// let sortedArray = bubbleSort(unSotedArray);
+// console.log(`my sortedArray is: ${sortedArray} => the array length is ${sortedArray.length}`);
