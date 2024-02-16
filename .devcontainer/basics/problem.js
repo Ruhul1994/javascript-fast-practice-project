@@ -595,3 +595,24 @@
 // let unSotedArray = [1,2,34,45,6,76,43,34,65,3];
 // let sortedArray = bubbleSort(unSotedArray);
 // console.log(`my sortedArray is: ${sortedArray} => the array length is ${sortedArray.length}`);
+
+//this is the example of clection sort;
+let myArray = [23,6,7,2,3,4];
+function selectionSort(array){
+for(let i=0; i<array.length; i++){
+    let minIndex = i;
+    for(let j= i+1; j<array.length; j++){
+        if(array[minIndex] > array[j]){
+            minIndex = j;
+        }
+    
+        }
+
+           if(i !== minIndex){
+            [array[i], array[minIndex]] = [array[minIndex], array[i]]
+           }
+}
+return array;
+}
+
+console.log(selectionSort(myArray));
