@@ -597,22 +597,34 @@
 // console.log(`my sortedArray is: ${sortedArray} => the array length is ${sortedArray.length}`);
 
 //this is the example of clection sort;
-let myArray = [23,6,7,2,3,4];
-function selectionSort(array){
-for(let i=0; i<array.length; i++){
-    let minIndex = i;
-    for(let j= i+1; j<array.length; j++){
-        if(array[minIndex] > array[j]){
-            minIndex = j;
-        }
+// let myArray = [23,6,7,2,3,4];
+// function selectionSort(array){
+// for(let i=0; i<array.length; i++){
+//     let minIndex = i;
+//     for(let j= i+1; j<array.length; j++){
+//         if(array[minIndex] > array[j]){
+//             minIndex = j;
+//         }
     
-        }
+//         }
 
-           if(i !== minIndex){
-            [array[i], array[minIndex]] = [array[minIndex], array[i]]
-           }
-}
-return array;
-}
+//            if(i !== minIndex){
+//             [array[i], array[minIndex]] = [array[minIndex], array[i]]
+//            }
+// }
+// return array;
+// }
 
-console.log(selectionSort(myArray));
+// console.log(selectionSort(myArray));
+
+// tihe problem is two element sum equal to targe. not repet the element.
+
+function fiendSumElement(array,terget){
+for(let i=0; i<array.length; i++){
+    for(let j = i +1; j<array.length; j++){
+        if((array[i] + array[j] ) === terget) return [i, j];
+    }
+}
+return false;
+}
+console.log(fiendSumElement([2,3,4,6],7));
