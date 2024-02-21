@@ -619,12 +619,24 @@
 
 // tihe problem is two element sum equal to targe. not repet the element.
 
+// function fiendSumElement(array,terget){
+// for(let i=0; i<array.length; i++){
+//     for(let j = i +1; j<array.length; j++){
+//         if((array[i] + array[j] ) === terget) return [i, j];
+//     }
+// }
+// return false;
+// }
+// console.log(fiendSumElement([2,3,4,6],7));
+
+//same problem but defferent way solving it is better optimijetion code.
 function fiendSumElement(array,terget){
-for(let i=0; i<array.length; i++){
-    for(let j = i +1; j<array.length; j++){
-        if((array[i] + array[j] ) === terget) return [i, j];
+    for(let i=0; i<array.length; i++){
+        let remain = terget - array[i]
+        for(let j = i +1; j<array.length; j++){
+            if(remain === array[j]) return [i, j];
+        }
     }
-}
-return false;
-}
-console.log(fiendSumElement([2,3,4,6],7));
+    return false;
+    }
+    console.log(fiendSumElement([2,3,4,6],10));
