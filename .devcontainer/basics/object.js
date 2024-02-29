@@ -179,3 +179,14 @@
 // });
 // console.log(Object.getOwnPropertyDescriptor(newobject,'name'));
 
+
+let myObject={
+    name:"atik",
+    rol:32,
+    class:"two",
+}
+
+const student = {...myObject};
+console.log(myObject);
+myObject["school"] = "abc school";
+console.log(myObject);
