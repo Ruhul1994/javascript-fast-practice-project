@@ -127,12 +127,12 @@
 // myArray.push('ruhul', 'nahid');
 // console.dir(Array.prototype);
 // for at method for using last method charch,
-const myArray = [
-    {name:'hore', age:12},
-   { name:'mina', age:13},
-   {name:'tina', age:15}, 
-   {name:'Ruhul', age:25},
-]
+// const myArray = [
+//     {name:'hore', age:12},
+//    { name:'mina', age:13},
+//    {name:'tina', age:15}, 
+//    {name:'Ruhul', age:25},
+// ]
 // const a = myArray.at(-1);
 // console.log(a)
 
@@ -143,10 +143,41 @@ const myArray = [
 // const c = myArray.at(-2);
 // console.log(c)
 
-const c = myArray.fill({name:'nahid',age:45},-1);
- console.log(c)
+// const c = myArray.fill({name:'nahid',age:45},-1);
+//  console.log(c)
 
-  const k = myArray.at(-2);
- console.log(k)
-const myArray=["Ruhul,nahid,kamal"]
- console.log(myArray);
+//   const k = myArray.at(-2);
+//  console.log(k)
+// const myArray=["Ruhul,nahid,kamal"]
+//  console.log(myArray);
+
+// const myArray =["Rina","Tina","vutu","Nitu"];
+// // const[pothom,secend, ,titio]=myArray
+// // console.log(titio);
+
+// const c = myArray.fill({name:'nahid',age:45},-1);
+
+//  console.log(c)
+
+let student={
+Name:'mina',
+roll:22,
+class:10,
+goodAt:{
+    math:60,
+    English:65,
+    history:70,
+    bangal:50, 
+}
+}
+
+const {math, English} = student.goodAt;
+
+function markshit(math, English){
+    return [math + English, math -English ];
+}
+
+const result = markshit(math,English);
+const[sum, much] = result;
+console.log(sum, much);
+
