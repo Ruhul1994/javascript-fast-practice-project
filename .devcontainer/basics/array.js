@@ -171,13 +171,17 @@ goodAt:{
 }
 }
 
-const {math, English} = student.goodAt;
+// const {math, English} = student.goodAt;
 
-function markshit(math, English){
-    return [math + English, math -English ];
-}
+// function markshit(math, English){
+//     return [math + English, math -English ];
+// }
 
-const result = markshit(math,English);
-const[sum, much] = result;
-console.log(sum, much);
+// const result = markshit(math,English);
+// const[sum, much] = result;
+// console.log(sum, much);
 
+
+// let students = ['mina','tina','muna','suna','Rupali','monali'];
+// const [,,,,...rest] = students;
+// console.log(rest)
