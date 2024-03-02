@@ -191,12 +191,42 @@
 // myObject["school"] = "abc school";
 // console.log(myObject);
 
-let fastname = 'shimana';
-let roll= 32;
+// let fastname = 'shimana';
+// let roll= 32;
 
-const girl={
-    Harname : fastname,
-    Harroll : roll
-}
+// const girl={
+//     Harname : fastname,
+//     Harroll : roll
+// }
 
-console.log(girl);
+// console.log(girl);
+
+
+// const student = [
+//     {name:"Rakib",Roll:1,class:4},
+//     {name:"miana",Roll:2,class:4},
+//     {name:"kari",Roll:4,class:4},
+//     {name:"natasha",Roll:6,class:4},
+//     {name:"muna",Roll:100,class:4},
+//     {name:"mitu",Roll:8,class:4},
+//     {name:"Rabbi",Roll:9,class:4},
+//     {name:"Rina",Roll:10,class:4},
+// ];
+
+// function fiendRoll(Roll){
+//     return student.find(studentDetails => studentDetails.Roll === Roll)
+// }
+
+// const hisRoll = fiendRoll(4);
+// console.log(hisRoll);
+
+const item = new Map([
+    [1,"mina"],
+    [2,"shima"],
+    [4,'tanima'],
+    [5,'Rukaya'],
+    [6,'natsha']
+]);
+
+item.set(7,'toma')
+console.log(item);
