@@ -185,3 +185,12 @@ goodAt:{
 // let students = ['mina','tina','muna','suna','Rupali','monali'];
 // const [,,,,...rest] = students;
 // console.log(rest)
+
+//S will be capital leter hear.
+
+// let myArray =[1,2,3,45,6,3,6,2,3,4,5,9,7,8,8];
+// function removeDuplicat (array){
+//     let newArray = new Set(array)
+//     console.log([...newArray])
+// }
+// removeDuplicat (myArray);
