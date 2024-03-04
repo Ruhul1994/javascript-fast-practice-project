@@ -172,12 +172,21 @@ const workers = [
 // console.log(maltiplay(6));
 //this function is use for maltiplay.
 
-function countDown(n){
-    console.log(n);
-    n--
-    if(n > 0){
-      countDown(n);
-    };
-    }
+// function countDown(n){
+//     console.log(n);
+//     n--
+//     if(n > 0){
+//       countDown(n);
+//     };
+//     }
 
-    countDown(6);
+//     countDown(6);
+
+//this is a biend function
+// function priceOf(contety, price) {
+//   let total = price * contety;
+//   console.log(total);
+// }
+
+// const biendPrice = priceOf.bind(null,10);
+// biendPrice(2);
