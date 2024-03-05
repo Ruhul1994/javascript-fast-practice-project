@@ -220,13 +220,61 @@
 // const hisRoll = fiendRoll(4);
 // console.log(hisRoll);
 
-const item = new Map([
-    [1,"mina"],
-    [2,"shima"],
-    [4,'tanima'],
-    [5,'Rukaya'],
-    [6,'natsha']
-]);
+// const item = new Map([
+//     [1,"mina"],
+//     [2,"shima"],
+//     [4,'tanima'],
+//     [5,'Rukaya'],
+//     [6,'natsha']
+// ]);
 
-item.set(7,'toma')
-console.log(item);
+// item.set(7,'toma')
+// console.log(item);
+
+
+// let fastboy = 'mijan';
+// let Monitor = 'pinki';
+
+// const classTen = {
+//     fastboy:"Nehal",
+//     Monitor:'Atika',
+//     OldStudent:['Akash','mitu','Raju','piriya'],
+//     lastBoy:"Mrinal",
+//     teacher: {
+//         Bangla:'Bikash sir',
+//         English:'Manik sir'
+//     },
+//     HomeWork: function reading({Bangla,English}){
+//         console.log(Bangla);
+//         console.log(English);
+//         }
+// }
+
+// //  ({fastboy, Monitor} = classTen);
+// // const {sclorship:speshalChild = 'mariya'}= classTen;
+// // const{OldStudent:fail=[]} = classTen;
+// // console.log(fastboy, lastBoy);
+// // console.log(fastboy,Monitor);
+// ({ fastboy: myFastboy, Monitor: myMonitor } = classTen);
+// console.log(myFastboy, myMonitor);
+let myFastboy = 'mijan';
+let myMonitor = 'pinki';
+
+let classTen = {
+    fastboy: "Nehal",
+    Monitor: 'Atika',
+    OldStudent: ['Akash', 'mitu', 'Raju', 'piriya'],
+    lastBoy: "Mrinal",
+    teacher: {
+        Bangla: 'Bikash sir',
+        English: 'Manik sir'
+    },
+    HomeWork: function reading({ Bangla, English }) {
+        console.log(Bangla);
+        console.log(English);
+    }
+}
+
+// Destructuring assignment with different variable names
+({ fastboy: myFastboy, Monitor: myMonitor } = classTen);
+console.log(myFastboy, myMonitor);
