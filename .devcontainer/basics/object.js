@@ -257,8 +257,8 @@
 // // console.log(fastboy,Monitor);
 // ({ fastboy: myFastboy, Monitor: myMonitor } = classTen);
 // console.log(myFastboy, myMonitor);
-let myFastboy = 'mijan';
-let myMonitor = 'pinki';
+// let myFastboy = 'mijan';
+// let myMonitor = 'pinki';
 
 let classTen = {
     fastboy: "Nehal",
@@ -275,6 +275,15 @@ let classTen = {
     }
 }
 
-// Destructuring assignment with different variable names
-({ fastboy: myFastboy, Monitor: myMonitor } = classTen);
-console.log(myFastboy, myMonitor);
+// // Destructuring assignment with different variable names
+// ({ fastboy: myFastboy, Monitor: myMonitor } = classTen);
+// console.log(myFastboy, myMonitor);
+
+function student(details){
+    const {fastboy,Monitor,lastBoy} = details;
+    console.log(`the fast boy name: ${fastboy}`)
+    console.log(`the monitor name: ${Monitor}`)
+    console.log(`the last boy name: ${lastBoy}`)
+};
+
+student(classTen);
