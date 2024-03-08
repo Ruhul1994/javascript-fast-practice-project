@@ -18,9 +18,22 @@ class AddMactin {
     }
     makeArray(number){
         this.array.push(number);
+        return this.array
+    }
+    lookUp(){
+       return this.array[this.array.length-1];
+    }
+    removeElement(){
+       return this.array.pop()
     }
 }
 
 let numberArray = new AddMactin();
-numberArray.makeArray([3,4,56,7,3]);
-// console.log(numberArray)
+numberArray.makeArray(5);
+numberArray.makeArray(8);
+numberArray.makeArray(23);
+numberArray.makeArray(29);
+  
+console.log(numberArray.lookUp());
+numberArray.removeElement();
+console.log(numberArray)
