@@ -630,13 +630,23 @@
 // console.log(fiendSumElement([2,3,4,6],7));
 
 //same problem but defferent way solving it is better optimijetion code.
-function fiendSumElement(array,terget){
-    for(let i=0; i<array.length; i++){
-        let remain = terget - array[i]
-        for(let j = i +1; j<array.length; j++){
-            if(remain === array[j]) return [i, j];
-        }
+// function fiendSumElement(array,terget){
+//     for(let i=0; i<array.length; i++){
+//         let remain = terget - array[i]
+//         for(let j = i +1; j<array.length; j++){
+//             if(remain === array[j]) return [i, j];
+//         }
+//     }
+//     return false;
+//     }
+//     console.log(fiendSumElement([2,3,4,6],10));
+
+// creat a class.
+
+class RootArray {
+    constructor(array) {
+       this.array = [];
     }
-    return false;
-    }
-    console.log(fiendSumElement([2,3,4,6],10));
+}
+const myArray = new RootArray()
+console.log(myArray);
