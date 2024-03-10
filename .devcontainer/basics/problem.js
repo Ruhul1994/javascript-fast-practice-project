@@ -643,10 +643,39 @@
 
 // creat a class.
 
-class RootArray {
-    constructor(array) {
-       this.array = [];
+// class RootArray {
+//     constructor(array) {
+//        this.array = [];
+//     }
+// }
+// const myArray = new RootArray()
+// console.log(myArray);
+
+
+class AnatherStack {
+    constructor(){
+        this.database={};
+        this.iteme = 0;
+    }
+    push(value){
+        this.iteme++
+        this.database[this.iteme]=value;
+        return this.database;
+    }
+    pop(){
+        delete this.database[this.iteme];
+        this.iteme--;
+        return this.database;
+    }
+    picup(){
+      return  this.database[this.iteme];
     }
 }
-const myArray = new RootArray()
-console.log(myArray);
+
+const database1 = new AnatherStack();
+console.log(database1);
+database1.push(5);
+database1.push(6);
+console.log(database1.push(23));
+console.log(database1.pop());
+console.log(database1.picup());
