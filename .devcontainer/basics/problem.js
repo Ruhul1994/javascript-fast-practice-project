@@ -652,30 +652,84 @@
 // console.log(myArray);
 
 
-class AnatherStack {
-    constructor(){
-        this.database={};
-        this.iteme = 0;
+// class AnatherStack {
+//     constructor(){
+//         this.database={};
+//         this.iteme = 0;
+//     }
+//     push(value){
+//         this.iteme++
+//         this.database[this.iteme]=value;
+//         return this.database;
+//     }
+//     pop(){
+//         delete this.database[this.iteme];
+//         this.iteme--;
+//         return this.database;
+//     }
+//     picup(){
+//       return  this.database[this.iteme];
+//     }
+// }
+
+// const database1 = new AnatherStack();
+// console.log(database1);
+// database1.push(5);
+// database1.push(6);
+// console.log(database1.push(23));
+// console.log(database1.pop());
+// console.log(database1.picup());
+
+// class Queue{
+//     constructor(){
+//         this.array = [];
+//         return this.array;
+//     }
+//     enQueue(value){
+//         this.array.unshift(value);
+//         return this.array;
+//     }
+//     deQueue(){
+//         this.array.pop();
+//         return this.array;
+//     }
+//     look(){
+//        return this.array[this.array.length - 1];
+//     }
+// }
+
+// const Queue1 = new Queue();
+// Queue1.enQueue(12);
+// Queue1.enQueue(14);
+// Queue1.enQueue(18);
+// Queue1.enQueue(197);
+// console.log(Queue1);
+
+class Queue {
+    constructor() {
+        this.array = [];
+        return this.array;
+    };
+
+    enQueue(value) {
+        this.array.unshift(value); // Add element to the front of the array
+        return this.array;
+    };
+
+    deQueue() {
+        this.array.pop(); // Remove the last element from the array
+        return this.array;
     }
-    push(value){
-        this.iteme++
-        this.database[this.iteme]=value;
-        return this.database;
-    }
-    pop(){
-        delete this.database[this.iteme];
-        this.iteme--;
-        return this.database;
-    }
-    picup(){
-      return  this.database[this.iteme];
+
+    look() {
+        return this.array[this.array.length - 1];
     }
 }
 
-const database1 = new AnatherStack();
-console.log(database1);
-database1.push(5);
-database1.push(6);
-console.log(database1.push(23));
-console.log(database1.pop());
-console.log(database1.picup());
+const Queue1 = new Queue();
+Queue1.enQueue(12);
+Queue1.enQueue(14);
+Queue1.enQueue(18);
+Queue1.enQueue(197);
+
+console.log(Queue1);
