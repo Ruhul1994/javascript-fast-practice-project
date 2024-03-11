@@ -705,31 +705,44 @@
 // Queue1.enQueue(197);
 // console.log(Queue1);
 
-class Queue {
-    constructor() {
-        this.array = [];
-        return this.array;
-    };
+// class Queue {
+//     constructor() {
+//         this.array = [];
+//         return this.array;
+//     };
 
-    enQueue(value) {
-        this.array.unshift(value); // Add element to the front of the array
-        return this.array;
-    };
+//     enQueue(value) {
+//         this.array.unshift(value); // Add element to the front of the array
+//         return this.array;
+//     };
 
-    deQueue() {
-        this.array.pop(); // Remove the last element from the array
-        return this.array;
+//     deQueue() {
+//         this.array.pop(); // Remove the last element from the array
+//         return this.array;
+//     }
+
+//     look() {
+//         return this.array[this.array.length - 1];
+//     }
+// }
+
+// const Queue1 = new Queue();
+// Queue1.enQueue(12);
+// Queue1.enQueue(14);
+// Queue1.enQueue(18);
+// Queue1.enQueue(197);
+
+// console.log(Queue1);
+
+//please push.
+
+function reverseWord(word){
+    let Recursiveword="";
+    for(let i = word.length-1; i >= 0; i-- ){
+        let letter = word[i];
+        Recursiveword += letter;
     }
-
-    look() {
-        return this.array[this.array.length - 1];
-    }
+    return Recursiveword;
 }
-
-const Queue1 = new Queue();
-Queue1.enQueue(12);
-Queue1.enQueue(14);
-Queue1.enQueue(18);
-Queue1.enQueue(197);
-
-console.log(Queue1);
+const result = reverseWord("Ruhul");
+console.log(result);
