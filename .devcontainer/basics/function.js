@@ -190,3 +190,13 @@ const workers = [
 
 // const biendPrice = priceOf.bind(null,10);
 // biendPrice(2);
+
+//recarcive function.
+function mynumber(number){
+    if(number === 0){
+        return;
+    }
+    console.log(`your number is ${number}`)
+    mynumber(number -1);
+}
+mynumber(10);
