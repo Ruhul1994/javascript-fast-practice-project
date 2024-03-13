@@ -192,11 +192,26 @@ const workers = [
 // biendPrice(2);
 
 //recarcive function.
-function mynumber(number){
-    if(number === 0){
-        return;
-    }
-    console.log(`your number is ${number}`)
-    mynumber(number -1);
-}
-mynumber(10);
+// function mynumber(number){
+//     if(number === 0){
+//         return;
+//     }
+//     console.log(`your number is ${number}`)
+//     mynumber(number -1);
+// }
+// mynumber(10);
+
+// space removing function and word count.
+
+// function RemovingSpaceAndWordCount(word){
+//     let count=0;
+//     for(let i=0; i< word.length; i++){
+//         if(word[i]==" " && word[i-1] !==" "){
+//             count++;
+//         }
+//     }
+//     count++;
+//     return count;
+// }
+// let result = RemovingSpaceAndWordCount("thank you so much. i am a honest opinion you are a brilliant");
+// console.log(result);
