@@ -736,13 +736,26 @@
 
 //please push.
 
-function reverseWord(word){
-    let Recursiveword="";
-    for(let i = word.length-1; i >= 0; i-- ){
-        let letter = word[i];
-        Recursiveword += letter;
+// function reverseWord(word){
+//     let Recursiveword="";
+//     for(let i = word.length-1; i >= 0; i-- ){
+//         let letter = word[i];
+//         Recursiveword += letter;
+//     }
+//     return Recursiveword;
+// }
+// const result = reverseWord("Ruhul");
+// console.log(result);
+
+class Singleliklist {
+    constructor(){
+        this.head = null,
+        this.tail = null,
+        this.length = 0;
     }
-    return Recursiveword;
+    isEmpty(){
+       return this.length ===0;
+    }
 }
-const result = reverseWord("Ruhul");
-console.log(result);
+const list = new Singleliklist();
+console.log(list);
