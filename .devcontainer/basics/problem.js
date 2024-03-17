@@ -747,15 +747,16 @@
 // const result = reverseWord("Ruhul");
 // console.log(result);
 
-class Singleliklist {
-    constructor(){
-        this.head = null,
-        this.tail = null,
-        this.length = 0;
-    }
-    isEmpty(){
-       return this.length ===0;
-    }
-}
-const list = new Singleliklist();
-console.log(list);
+// class Singleliklist {
+//     constructor(){
+//         this.head = null,
+//         this.tail = null,
+//         this.length = 0;
+//     }
+//     isEmpty(){
+//        return this.length ===0;
+//     }
+// }
+// const list = new Singleliklist();
+// console.log(list);
+

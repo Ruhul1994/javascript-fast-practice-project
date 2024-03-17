@@ -194,3 +194,141 @@ goodAt:{
 //     console.log([...newArray])
 // }
 // removeDuplicat (myArray);
+
+
+
+//sotted array and marged;
+
+
+// let fatArray = [1,3,5,7,9,11,12,13];
+// let secendArray = [2,4,6,8,10];
+
+// function margeArray(arr1,arr2){
+// let length= arr1.length + arr2.length;
+// let marge =[];
+// let j = 0;
+// let k = 0;
+// for (let i=0; i < length; i++){
+//     if(arr1[j] < arr2[k] || arr2 === undefined){
+//         marge.push(arr1[j]);
+//         j++; 
+//      }else{
+//          marge.push(arr2[k]);
+//          k++;
+//      }
+// }
+// return marge;
+// }
+// console.log(margeArray(fatArray,secendArray));
+// let fatArray = [1, 3,undefined,24 ];
+// let secondArray = [2, 4,34];
+
+// function mergeArray(arr1, arr2) {
+//     let length = arr1.length + arr2.length;
+//     let merge = [];
+//     let j = 0;
+//     let k = 0;
+    
+//     for (let i = 0; i < length; i++) {
+//         if (k >= arr2.length || arr1[j] < arr2[k]) {
+//             merge.push(arr1[j]);
+//             j++;
+//         } else {
+//             merge.push(arr2[k]);
+//             k++;
+//         }
+//     }
+    
+//     return merge;
+// }
+
+// console.log(mergeArray(fatArray, secondArray));
+
+// let fatArray = [1, 3, 5, 7, 9, undefined, 12, 13];
+// let secondArray = [2, 4, 6,34, 8, 10];
+
+// function mergeArray(arr1, arr2) {
+//     let length = arr1.length + arr2.length;
+//     let merge = [];
+//     let j = 0;
+//     let k = 0;
+    
+//     for (let i = 0; i < length; i++) {
+//         if (j < arr1.length && (k >= arr2.length || arr1[j] < arr2[k])) {
+//             merge.push(arr1[j]);
+//             j++;
+//         } else if (k < arr2.length) {
+//             merge.push(arr2[k]);
+//             k++;
+//         }
+//     }
+    
+//     return merge;
+// }
+
+// console.log(mergeArray(fatArray, secondArray));
+
+// let fatArray = [1, 3, 5, 7, 9, undefined, 12, 13];
+// let secondArray = [2, 4, 6, 34, 8, 10];
+
+// function mergeArray(arr1, arr2) {
+//     let length = arr1.length + arr2.length;
+//     let merge = [];
+//     let j = 0;
+//     let k = 0;
+    
+//     for (let i = 0; i < length; i++) {
+//         if (j < arr1.length && (k >= arr2.length || (arr1[j] !== undefined && (arr2[k] === undefined || arr1[j] < arr2[k])))) {
+//             merge.push(arr1[j]);
+//             j++;
+//         } else if (k < arr2.length && arr2[k] !== undefined) {
+//             merge.push(arr2[k]);
+//             k++;
+//         }
+//     }
+    
+//     return merge;
+// }
+
+// console.log(mergeArray(fatArray, secondArray));
+
+// let fatArray = [1, 3, 5, 7, 9, undefined, 12, 13];
+// let secondArray = [2, 4, 6, 34, 8, 10];
+
+// function mergeArray(arr1, arr2) {
+//     let merge = [];
+//     let j = 0;
+//     let k = 0;
+
+//     while (j < arr1.length || k < arr2.length) {
+//         if (j < arr1.length && (k >= arr2.length || (arr1[j] !== undefined && (arr2[k] === undefined || arr1[j] < arr2[k])))) {
+//             merge.push(arr1[j]);
+//             j++;
+//         } else if (k < arr2.length && arr2[k] !== undefined) {
+//             merge.push(arr2[k]);
+//             k++;
+//         } else {
+//             // This block handles the case where arr2[k] is undefined
+//             k++;
+//         }
+//     }
+
+//     return merge;
+// }
+
+// console.log(mergeArray(fatArray, secondArray));
+let fatArray = [1, 3, 5, 7, 9, undefined, 12, 13];
+let secondArray = [2, 4, 6, 34, 8, 10];
+
+function mergeArray(arr1, arr2) {
+    // Concatenate the arrays and filter out undefined values
+    let merged = arr1.concat(arr2).filter(value => value !== undefined);
+    
+    // Sort the merged array
+    merged.sort((a, b) => a - b);
+
+    return merged;
+}
+
+console.log(mergeArray(fatArray, secondArray));
+
