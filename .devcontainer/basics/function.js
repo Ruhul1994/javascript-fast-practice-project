@@ -230,12 +230,17 @@ const workers = [
 
 //rest operator use case below;
 
-function Added(...data){
-let result = 0;
-for(const number of data){
-    result += number;  
-}
-return result;
-}
-const point = [1,2,34,5,6,7,8]
-console.log(Added(...point));
+// function Added(...data){
+// let result = 0;
+// for(const number of data){
+//     result += number;  
+// }
+// return result;
+// }
+// const point = [1,2,34,5,6,7,8]
+// console.log(Added(...point));
+
+// replace method will take are two paramaters.
+let textMassage = "this is the main parpas of Life is the success the future";
+const changeWord = textMassage.replace(/Life/gi,(similar) => similar.toLowerCase());
+console.log(changeWord);
