@@ -216,14 +216,26 @@ const workers = [
 // let result = RemovingSpaceAndWordCount("thank you so much. i am a honest opinion you are a brilliant");
 // console.log(result);
 
-const HouseRent = function(rent, advance){
-    this.rent = rent;
-    this. advace = advance;
+// const HouseRent = function(rent, advance){
+//     this.rent = rent;
+//     this. advace = advance;
     
-}
-HouseRent.prototype.inrece = function(){
-    return this.rent += 600;
-     }
+// }
+// HouseRent.prototype.inrece = function(){
+//     return this.rent += 600;
+//      }
 
-const newRent = new HouseRent(2000, 5000);
-console.log(newRent.inrece());
+// const newRent = new HouseRent(2000, 5000);
+// console.log(newRent.inrece());
+
+//rest operator use case below;
+
+// function Added(...data){
+// let result = 0;
+// for(const number of data){
+//     result += number;  
+// }
+// return result;
+// }
+// console.log(Added(2,3,4,56,76,30));
+// console.log(Added(2,3,4,5));

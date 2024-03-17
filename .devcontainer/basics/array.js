@@ -317,18 +317,8 @@ goodAt:{
 // }
 
 // console.log(mergeArray(fatArray, secondArray));
-let fatArray = [1, 3, 5, 7, 9, undefined, 12, 13];
-let secondArray = [2, 4, 6, 34, 8, 10];
-
-function mergeArray(arr1, arr2) {
-    // Concatenate the arrays and filter out undefined values
-    let merged = arr1.concat(arr2).filter(value => value !== undefined);
-    
-    // Sort the merged array
-    merged.sort((a, b) => a - b);
-
-    return merged;
-}
-
-console.log(mergeArray(fatArray, secondArray));
-
+// 
+//Rest operotor.
+// const numberArray = [1,2,3,4,5,6,7,9];
+// let [,,...restOperoter] =numberArray;
+// console.log(restOperoter[3]);
