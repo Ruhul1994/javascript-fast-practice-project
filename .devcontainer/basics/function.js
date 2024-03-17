@@ -215,3 +215,14 @@ const workers = [
 // }
 // let result = RemovingSpaceAndWordCount("thank you so much. i am a honest opinion you are a brilliant");
 // console.log(result);
+
+const HouseRent = function(rent, advance){
+    this.rent = rent;
+    this. advace = advance;
+    this.inrece = function(increnmt){
+       return rent + increnmt
+        }
+}
+
+const newRent = new HouseRent(2000, 5000);
+console.log(newRent.inrece(300));
