@@ -319,6 +319,9 @@ goodAt:{
 // console.log(mergeArray(fatArray, secondArray));
 // 
 //Rest operotor.
-// const numberArray = [1,2,3,4,5,6,7,9];
+ const numberArray = [1,2,200,3,122,4,5,6,7,9];
 // let [,,...restOperoter] =numberArray;
 // console.log(restOperoter[3]);
+
+let socore = [66,...numberArray,67,100];
+console.log(socore);
