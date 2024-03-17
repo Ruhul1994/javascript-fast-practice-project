@@ -230,12 +230,12 @@ const workers = [
 
 //rest operator use case below;
 
-// function Added(...data){
-// let result = 0;
-// for(const number of data){
-//     result += number;  
-// }
-// return result;
-// }
-// console.log(Added(2,3,4,56,76,30));
-// console.log(Added(2,3,4,5));
+function Added(...data){
+let result = 0;
+for(const number of data){
+    result += number;  
+}
+return result;
+}
+const point = [1,2,34,5,6,7,8]
+console.log(Added(...point));
