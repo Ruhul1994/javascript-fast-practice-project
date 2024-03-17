@@ -219,10 +219,11 @@ const workers = [
 const HouseRent = function(rent, advance){
     this.rent = rent;
     this. advace = advance;
-    this.inrece = function(increnmt){
-       return rent + increnmt
-        }
+    
 }
+HouseRent.prototype.inrece = function(){
+    return this.rent += 600;
+     }
 
 const newRent = new HouseRent(2000, 5000);
-console.log(newRent.inrece(300));
+console.log(newRent.inrece());
