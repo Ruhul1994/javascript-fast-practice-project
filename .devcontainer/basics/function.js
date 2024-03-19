@@ -241,6 +241,19 @@ const workers = [
 // console.log(Added(...point));
 
 // replace method will take are two paramaters.
-let textMassage = "this is the main parpas of Life is the success the future";
-const changeWord = textMassage.replace(/Life/gi,(similar) => similar.toLowerCase());
-console.log(changeWord);
+// let textMassage = "this is the main parpas of Life is the success the future";
+// const changeWord = textMassage.replace(/Life/gi,(similar) => similar.toLowerCase());
+// console.log(changeWord);
+//function decledeceleration call before the function deceleration or inshilaigation. 
+console.log(MakeIcecrim('vanilla','chocklet'));
+function MakeIcecrim(flavar1, flavar2){
+    let ice = `It is your  ${flavar1} and ${flavar2} icecrim.`
+    return ice;
+}
+
+let MakeIcecrimMashin = function(flavar1, flavar2){
+    let ice = `It is your  ${flavar1} and ${flavar2} icecrim.`
+    return ice;
+}
+let ice3 = MakeIcecrimMashin("nut","lisi");
+console.log(ice3);
