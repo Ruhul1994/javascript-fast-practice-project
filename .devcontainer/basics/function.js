@@ -245,15 +245,26 @@ const workers = [
 // const changeWord = textMassage.replace(/Life/gi,(similar) => similar.toLowerCase());
 // console.log(changeWord);
 //function decledeceleration call before the function deceleration or inshilaigation. 
-console.log(MakeIcecrim('vanilla','chocklet'));
-function MakeIcecrim(flavar1, flavar2){
-    let ice = `It is your  ${flavar1} and ${flavar2} icecrim.`
-    return ice;
-}
+// console.log(MakeIcecrim('vanilla','chocklet'));
+// function MakeIcecrim(flavar1, flavar2){
+//     let ice = `It is your  ${flavar1} and ${flavar2} icecrim.`
+//     return ice;
+// }
 
-let MakeIcecrimMashin = function(flavar1, flavar2){
-    let ice = `It is your  ${flavar1} and ${flavar2} icecrim.`
-    return ice;
-}
-let ice3 = MakeIcecrimMashin("nut","lisi");
-console.log(ice3);
+// let MakeIcecrimMashin = function(flavar1, flavar2){
+//     let ice = `It is your  ${flavar1} and ${flavar2} icecrim.`
+//     return ice;
+// }
+// let ice3 = MakeIcecrimMashin("nut","lisi");
+// console.log(ice3);
+
+const namingCnvention = function(name){
+console.log(`welcome to my chanel ${name}`);
+};
+
+function welcome(name){
+  return  namingCnvention(name);
+};
+
+let griting = welcome("Ruhul");
+console.log(griting);
