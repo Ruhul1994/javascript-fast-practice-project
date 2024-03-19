@@ -323,5 +323,20 @@ goodAt:{
 // let [,,...restOperoter] =numberArray;
 // console.log(restOperoter[3]);
 
-let socore = [66,...numberArray,67,100];
-console.log(socore);
+// let socore = [66,...numberArray,67,100];
+// console.log(socore);
+
+let mobile =[
+    {name:"wolton", price:2000, model:'a35'},
+    {name:"samsung", price:3000, model:'a26'},
+    {name:"motorola", price:4000, model: 'a43'},
+    {name:"Apple", price:300, model:'a2600'},
+
+]
+
+function sotingPrice(fast, secend){
+    return -1*(fast.price - secend.price);
+}
+
+let lowPrice = mobile.sort(sotingPrice);
+console.log(lowPrice);
