@@ -5,5 +5,5 @@ let result = text1.padEnd(16);
 console.log(result);
 
 let text = "Hello";
-let paddedText = text.padStart(10); // Pad with spaces to make the total length 10
+let paddedText = text.padEnd(18,'.'); // Pad with spaces to make the total length 10
 console.log(paddedText); // Output: "     Hello"
