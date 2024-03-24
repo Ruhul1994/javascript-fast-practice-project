@@ -21,5 +21,8 @@ let text1 = "goood morning sir";
 
 //Example of search method
 let someText = 'this is the main Plan in my life but it is not working';
-let searchResult = someText.search(/i/i);
-console.log(searchResult);
+// let searchResult = someText.search(/i/i);
+// console.log(searchResult);
+
+let ismatch = someText.match(/is/g);
+console.log(ismatch);
