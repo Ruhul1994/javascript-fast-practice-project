@@ -24,5 +24,12 @@ let someText = 'this is the main Plan in my life but it is not working';
 // let searchResult = someText.search(/i/i);
 // console.log(searchResult);
 
-let ismatch = someText.match(/is/g);
-console.log(ismatch);
+// let ismatch = someText.match(/is/g);
+// console.log(ismatch);
+
+let para = 'this is time to go outside';
+//this is includes method 
+// console.log(para.includes('is'));
+//this is concat method
+let para2 = 'I am not codding practice now';
+console.log(para.concat(" and " ,para2));
