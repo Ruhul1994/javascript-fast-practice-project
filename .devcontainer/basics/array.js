@@ -343,7 +343,16 @@ let mobile =[
 
 // use the fiend method.
 
-let result = mobile.find((e)=> e.name === 'Apple');
+// let result = mobile.find((e)=> e.name === 'Apple');
+
+// when you fiend endex.
+//let result = mobile.findIndex((e)=> e.name === 'Apple');
+
+// find allowes give you the single element
 // let fruts = ['mango','banana', 'Apple','papa'];
-// let result = fruts.find( (e) => e === "Apple" )
+// let result = fruts.find( (e) => e === "Apple" );
+
+// filter alowes return Array, and maltiple thing.
+let result = mobile.filter((e)=> e.name === 'Apple' || e.name === 'wolton');
+
 console.log(result);
