@@ -349,10 +349,18 @@ let mobile =[
 //let result = mobile.findIndex((e)=> e.name === 'Apple');
 
 // find allowes give you the single element
-// let fruts = ['mango','banana', 'Apple','papa'];
+let fruts = ['mango','banana', 'Apple','papa','lisi','wotermalon'];
 // let result = fruts.find( (e) => e === "Apple" );
 
 // filter alowes return Array, and maltiple thing.
-let result = mobile.filter((e)=> e.name === 'Apple' || e.name === 'wolton');
+//let result = mobile.filter((e)=> e.name === 'Apple' || e.name === 'wolton');
 
+// slice method use for slice.
+//let result = fruts.slice(2,5);
+
+// splice method alowes change the array.
+
+let result = fruts.splice(2,2);
+console.log(fruts);
+console.log(fruts.length);
 console.log(result);
