@@ -37,4 +37,23 @@ let para2 = 'I am not codding practice now';
 //start with use for check this word is fast word or not, if it is fast word then it will give me true. 
 // when you count the number alowes start 0
 //the start with check the 5 no indesx is star is not . it is true then it will return in console true.
-console.log(para2.startsWith('not',5));
+//console.log(para2.startsWith('not',5));
+
+
+//  primative vs refference.
+
+// let a = 6;
+// let b = 3;
+// console.log("1",b)
+// b = a
+// console.log("2",b);
+// a = 9;
+// console.log("3",b);
+// b = a
+// console.log("4",b);
+// Refferance type valu all thime change the root of momory alocate place.
+let a =[1,2,3]
+let b = a;
+console.log("1",b);
+a.push(8);
+console.log("2",b);
