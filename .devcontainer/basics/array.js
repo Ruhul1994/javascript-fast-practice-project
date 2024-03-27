@@ -333,10 +333,17 @@ let mobile =[
     {name:"Apple", price:300, model:'a2600'},
 
 ]
+// sorting function;
+// function sotingPrice(fast, secend){
+//     return -1*(fast.price - secend.price);
+// }
 
-function sotingPrice(fast, secend){
-    return -1*(fast.price - secend.price);
-}
+// let lowPrice = mobile.sort(sotingPrice);
+// console.log(lowPrice);
 
-let lowPrice = mobile.sort(sotingPrice);
-console.log(lowPrice);
+// use the fiend method.
+
+let result = mobile.find((e)=> e.name === 'Apple');
+// let fruts = ['mango','banana', 'Apple','papa'];
+// let result = fruts.find( (e) => e === "Apple" )
+console.log(result);
