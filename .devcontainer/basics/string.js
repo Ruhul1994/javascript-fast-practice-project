@@ -32,4 +32,9 @@ let para = 'this is time to go outside';
 // console.log(para.includes('is'));
 //this is concat method
 let para2 = 'I am not codding practice now';
-console.log(para.concat(" and " ,para2));
+// console.log(para.concat(" and " ,para2));
+
+//start with use for check this word is fast word or not, if it is fast word then it will give me true. 
+// when you count the number alowes start 0
+//the start with check the 5 no indesx is star is not . it is true then it will return in console true.
+console.log(para2.startsWith('not',5));
