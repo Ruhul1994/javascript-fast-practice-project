@@ -369,7 +369,10 @@ let mobile =[
 
  let fruits = ['mango','banana','Apple','pinapple','gova'];
 
- let result = fruits.map((element)=>{
-    return element + 'ok';
- })
- console.log(result);
+//  let result = fruits.map((element)=>{
+//     return element + 'ok';
+//  })
+//  console.log(result);
+
+let result = fruits.reduce((accu,carrent)=> accu + carrent);
+console.log(result);
