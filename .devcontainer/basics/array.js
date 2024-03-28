@@ -349,7 +349,7 @@ let mobile =[
 //let result = mobile.findIndex((e)=> e.name === 'Apple');
 
 // find allowes give you the single element
-let fruts = ['mango','banana', 'Apple','papa','lisi','wotermalon'];
+// let fruts = ['mango','banana', 'Apple','papa','lisi','wotermalon'];
 // let result = fruts.find( (e) => e === "Apple" );
 
 // filter alowes return Array, and maltiple thing.
@@ -362,7 +362,14 @@ let fruts = ['mango','banana', 'Apple','papa','lisi','wotermalon'];
 // splice method alowes change the array.
 // array.splice(index, on of remove item, new added item);
 // remember coppy the main array it will change the main array.
-let result = fruts.splice(2,2,'lemon','f1','f2'); //f1 == frute name for example.
-console.log(fruts);
-console.log(fruts.length);
-console.log(result);
+// let result = fruts.splice(2,2,'lemon','f1','f2'); //f1 == frute name for example.
+// console.log(fruts);
+// console.log(fruts.length);
+// console.log(result);
+
+ let fruits = ['mango','banana','Apple','pinapple','gova'];
+
+ let result = fruits.map((element)=>{
+    return element + 'ok';
+ })
+ console.log(result);
