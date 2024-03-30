@@ -260,30 +260,58 @@
 // let myFastboy = 'mijan';
 // let myMonitor = 'pinki';
 
-let classTen = {
-    fastboy: "Nehal",
-    Monitor: 'Atika',
-    OldStudent: ['Akash', 'mitu', 'Raju', 'piriya'],
-    lastBoy: "Mrinal",
-    teacher: {
-        Bangla: 'Bikash sir',
-        English: 'Manik sir'
-    },
-    HomeWork: function reading({ Bangla, English }) {
-        console.log(Bangla);
-        console.log(English);
-    }
-}
+// let classTen = {
+//     fastboy: "Nehal",
+//     Monitor: 'Atika',
+//     OldStudent: ['Akash', 'mitu', 'Raju', 'piriya'],
+//     lastBoy: "Mrinal",
+//     teacher: {
+//         Bangla: 'Bikash sir',
+//         English: 'Manik sir'
+//     },
+//     HomeWork: function reading({ Bangla, English }) {
+//         console.log(Bangla);
+//         console.log(English);
+//     }
+// }
 
 // // Destructuring assignment with different variable names
 // ({ fastboy: myFastboy, Monitor: myMonitor } = classTen);
 // console.log(myFastboy, myMonitor);
 
-function student(details){
-    const {fastboy,Monitor,lastBoy} = details;
-    console.log(`the fast boy name: ${fastboy}`)
-    console.log(`the monitor name: ${Monitor}`)
-    console.log(`the last boy name: ${lastBoy}`)
-};
+// function student(details){
+//     const {fastboy,Monitor,lastBoy} = details;
+//     console.log(`the fast boy name: ${fastboy}`)
+//     console.log(`the monitor name: ${Monitor}`)
+//     console.log(`the last boy name: ${lastBoy}`)
+// };
 
-student(classTen);
+// student(classTen);
+
+
+// data distracting example;
+
+// const teacher = {
+//     teacherMaath:{
+//         name:'motin',
+//         subject:'math',
+//         age: 42,
+//         education:{
+//             school:'cms school',
+//             collage:'mtijhil collage',
+//             HaiarEducation:{
+//                 degree:'bashkhaly univarsity',
+//                 mastars: 'Brack University ',
+//                 cariculam:{
+//                     basicMath:'All',
+//                     HireMath:'all'
+
+//                 }
+//             }
+//         }
+//     }
+// }
+// // basicMath name reassign math1;
+// const {teacherMaath:{education:{HaiarEducation:{cariculam:{basicMath:math1}}}}={}}=teacher;
+
+// console.log(math1);
