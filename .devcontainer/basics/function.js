@@ -258,13 +258,15 @@ const workers = [
 // let ice3 = MakeIcecrimMashin("nut","lisi");
 // console.log(ice3);
 
-const namingCnvention = function(name){
-console.log(`welcome to my chanel ${name}`);
-};
+// 
 
-function welcome(name){
-  return  namingCnvention(name);
-};
+// rest and spread operator exampel.
+// function added(text, ...rest){
+//   console.log(text);
+//  let sum = rest.reduce((accu, carrentvalu)=>{
+//     return accu + carrentvalu
+//   }, 0)
+//   console.log(sum);
+// }
 
-let griting = welcome("Ruhul");
-console.log(griting);
+// added('the all sum result is :', 2,3,4,5,67);
