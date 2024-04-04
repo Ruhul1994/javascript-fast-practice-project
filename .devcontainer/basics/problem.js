@@ -759,4 +759,10 @@
 // }
 // const list = new Singleliklist();
 // console.log(list);
-
+console.log(Boolean([]));
+// 0 == 0
+if([]==false){
+    console.log('this is false');
+}else {
+    console.log('this is true');
+}
