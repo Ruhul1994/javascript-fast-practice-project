@@ -270,3 +270,5 @@ const workers = [
 // }
 
 // added('the all sum result is :', 2,3,4,5,67);
+
+
