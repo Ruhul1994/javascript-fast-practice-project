@@ -272,3 +272,13 @@ const workers = [
 // added('the all sum result is :', 2,3,4,5,67);
 
 
+// let setTimeoutId = setTimeout(()=>{
+//     console.log('thank you Ruhul');
+// },1000);
+// console.log('hello world');
+// ;
+// clearTimeout(setTimeoutId);
+const roadmapWrapper = document.querySelector('.roadmap-wrapper');
+const dimensions = roadmapWrapper.getBoundingClientRect();
+
+console.log(dimensions); 
