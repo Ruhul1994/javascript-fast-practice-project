@@ -7,10 +7,14 @@ function addBorder(pictures){
     let wall = "*".repeat(pictures[0].length + 2);
     pictures.unshift(wall);
     pictures.push(wall);
-    for(let i =1; i < pictures.length -1; i++){
+    for(let i =1; i < pictures.length -1; i++){  
         pictures[i]  = "*".concat(pictures[i] , "*") // normally use the + sing
     }
     return pictures;
 }
 
 console.log(addBorder(pictures));
+
+// I hade a problem fase fast i add = sine after '<='
+// then it added the extara 2 star in my last array element,
+// than i fixd it.
