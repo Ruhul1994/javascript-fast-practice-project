@@ -58,3 +58,30 @@ let demoString = 'Ruhulkuddus';
 // };
 
 // console.log( reverseNumber(41));
+
+
+ class node{
+    constructor(value){
+        this.value = value;
+        this.next = null;
+        this.pre = null;
+    }
+ }
+
+ const newNode = new node(10);
+ console.log(newNode);
+ newNode.next = new node(11);
+ newNode.pre = new node(12);
+ console.log(newNode);
+
+
+ class DoublyLinkList{
+    constructor(node){
+        this.head = null;
+        this.tail = null;
+        this.length = null;
+    }
+ }
+
+ const list = new DoublyLinkList();
+ console.log(list);
