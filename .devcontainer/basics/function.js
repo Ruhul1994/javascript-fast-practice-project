@@ -278,7 +278,13 @@ const workers = [
 // console.log('hello world');
 // ;
 // clearTimeout(setTimeoutId);
-const roadmapWrapper = document.querySelector('.roadmap-wrapper');
-const dimensions = roadmapWrapper.getBoundingClientRect();
+// const roadmapWrapper = document.querySelector('.roadmap-wrapper');
+// const dimensions = roadmapWrapper.getBoundingClientRect();
 
-console.log(dimensions); 
+// console.log(dimensions); 
+
+function add(n){
+    return n +2;
+}
+
+console.log(add(5));
