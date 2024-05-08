@@ -283,8 +283,20 @@ const workers = [
 
 // console.log(dimensions); 
 
-function add(n){
-    return n +2;
+// function add(n){
+//     return n +2;
+// }
+
+// console.log(add(5));
+
+
+// curring function.
+function added(a){
+    return function (b){
+        return function(c){
+            return a*b*c
+        }
+    }
 }
 
-console.log(add(5));
+console.log(added(a)(b)(c));
