@@ -290,8 +290,8 @@ const workers = [
 // console.log(add(5));
 
 
-// curring function.
-function added(a){
+//curring function.
+function maltiplay(a){
     return function (b){
         return function(c){
             return a*b*c
@@ -299,4 +299,8 @@ function added(a){
     }
 }
 
-console.log(added(a)(b)(c));
+let maltiplayByFive = maltiplay(5); // parshil function.
+let maltiplayByFiveAndTwo = maltiplayByFive(2);
+let result = maltiplayByFiveAndTwo(4);
+console.log(result)
+
