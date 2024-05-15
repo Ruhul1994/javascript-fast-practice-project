@@ -291,16 +291,22 @@ const workers = [
 
 
 //curring function.
-function maltiplay(a){
-    return function (b){
-        return function(c){
-            return a*b*c
-        }
-    }
+// function maltiplay(a){
+//     return function (b){
+//         return function(c){
+//             return a*b*c
+//         }
+//     }
+// }
+
+// let maltiplayByFive = maltiplay(5); // parshil function.
+// let maltiplayByFiveAndTwo = maltiplayByFive(2);
+// let result = maltiplayByFiveAndTwo(4);
+// console.log(result)
+
+const myFunction = () => {
+    setTimeout(()=>{
+        console.log('thank you ruhul')
+    },1000);
 }
-
-let maltiplayByFive = maltiplay(5); // parshil function.
-let maltiplayByFiveAndTwo = maltiplayByFive(2);
-let result = maltiplayByFiveAndTwo(4);
-console.log(result)
-
+myFunction()
