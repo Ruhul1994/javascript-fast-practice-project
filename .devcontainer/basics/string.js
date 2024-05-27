@@ -117,3 +117,8 @@ function reverseNumber(n){
 };
 
 console.log( reverseNumber(41));
+
+
+let MyText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!';
+let newMyText = MyText.replace(/dolore/ig, "Ruhul");
+console.log(newMyText);
