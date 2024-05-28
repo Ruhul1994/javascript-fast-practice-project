@@ -304,9 +304,24 @@ const workers = [
 // let result = maltiplayByFiveAndTwo(4);
 // console.log(result)
 
-const myFunction = () => {
-    setTimeout(()=>{
-        console.log('thank you ruhul')
-    },1000);
+// const myFunction = () => {
+//     setTimeout(()=>{
+//         console.log('thank you ruhul')
+//     },1000);
+// }
+// myFunction()
+
+
+function x(){
+    for(var i=1; i<= 5; i++){
+        function close(x){   // every time it will be a get new i .
+            setTimeout (function (){
+                console.log(x);
+            },x * 1000) 
+        }
+        close(i);
+    }
+    console.log('Thank you ruhul');
 }
-myFunction()
+
+x()
