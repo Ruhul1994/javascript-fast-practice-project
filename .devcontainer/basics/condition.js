@@ -4,16 +4,16 @@ let spid = 40;
 
 // console.log(rightSpid);
 
-let msg;
-switch (spid) {
-    case 30 :
-        msg = 'you are normal';
-        break;
-    case 40: 
-    msg = 'you are too fast';
-    break;
-    default:
-        msg = 'you are too slow now';
-}
+// let msg;
+// switch (spid) {
+//     case 30 :
+//         msg = 'you are normal';
+//         break;
+//     case 40: 
+//     msg = 'you are too fast';
+//     break;
+//     default:
+//         msg = 'you are too slow now';
+// }
 
-console.log(msg);
+// console.log(msg);
