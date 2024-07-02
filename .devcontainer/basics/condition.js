@@ -17,3 +17,18 @@ let spid = 40;
 // }
 
 // console.log(msg);
+
+
+let randomNumber = Math.random();
+let result ="";
+
+function Game(gess){
+    if(randomNumber < 0.5){
+        result = "Head";
+    }else {
+        result = "Tail";
+    }
+return result == gess ? console.log('you wine'): console.log('you lost');
+}
+
+Game('Head');
